@@ -1,0 +1,12 @@
+Riga 122: la classe MSCommLib.MSComm del controllo MSComm1 non era una classe di controllo caricata.
+Riga 139: la classe VIDEOCAPXLib.VideoCapX del controllo vcx non era una classe di controllo caricata.
+Riga 125: il nome della proprietà _ExtentX in MSComm1 non è valido.
+Riga 126: il nome della proprietà _ExtentY in MSComm1 non è valido.
+Riga 127: il nome della proprietà _Version in MSComm1 non è valido.
+Riga 128: il nome della proprietà CommPort in MSComm1 non è valido.
+Riga 129: il nome della proprietà DTREnable in MSComm1 non è valido.
+Riga 130: il nome della proprietà BaudRate in MSComm1 non è valido.
+Riga 145: il nome della proprietà _Version in vcx non è valido.
+Riga 146: il nome della proprietà _ExtentX in vcx non è valido.
+Riga 147: il nome della proprietà _ExtentY in vcx non è valido.
+Riga 148: il nome della proprietà _StockProps in vcx non è valido.

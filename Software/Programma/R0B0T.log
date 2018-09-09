@@ -1,0 +1,5 @@
+Riga 24: la classe MSCommLib.MSComm del controllo MSComm1 non era una classe di controllo caricata.
+Riga 27: il nome della proprietà _ExtentX in MSComm1 non è valido.
+Riga 28: il nome della proprietà _ExtentY in MSComm1 non è valido.
+Riga 29: il nome della proprietà _Version in MSComm1 non è valido.
+Riga 30: il nome della proprietà DTREnable in MSComm1 non è valido.

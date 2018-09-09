@@ -1,0 +1,37 @@
+'While (SIS < 300)
+  '  SDX = ADC_Read(1)   'Lettura valore dal Sensore Destro
+   ' SSX = ADC_Read(0)   'Lettura valore dal Sensore Sinistro
+   '   If (SSX > 50) or (SDX > 50) Then
+    '    Avanti ()
+     '   Else
+      '   If (SSX - SDX > 0) Then
+       '    If SSX < 20 Then
+        '    Indietro ()
+         '   Delay_Ms (750)
+          ' End if
+           'Sinistra ()
+        ' Else
+         '  If SDX < 20 Then
+          '    Indietro ()
+           '   Delay_Ms (750)
+          ' End if
+          ' Destra ()
+         'End If
+    'End If
+    'SIS = ADC_Read(2)   'Lettura valore dal Sensore Infrarosso Sharp PortA.2
+'   Wend
+ ' Ape()
+ ' FRMS ()
+  'While (SIS < 280)
+    'SDX = ADC_Read(1)   'Lettura valore dal Sensore Destro
+    'SSX = ADC_Read(0)   'Lettura valore dal Sensore Sinistro
+         'If (SSX - SDX > 0) Then
+         '  Sinistra ()
+        ' Else
+        '   Destra ()
+        ' End If
+    'SIS = ADC_Read(2)   'Lettura valore dal Sensore Infrarosso Sharp PortA.2
+   'Wend
+ ' Delay_MS (1000)
+ ' Chi ()
+ ' Delay_MS (10000)
