@@ -1,0 +1,14 @@
++SUB
+trisc = 0  
+while 1
+Avanti ()
+delay_ms (3000)
+Sinistra ()
+delay_ms (500)
+Indietro ()
+delay_ms (3000)
+Destra ()
+delay_ms (500)
+PortC = 0
+wend
+End.

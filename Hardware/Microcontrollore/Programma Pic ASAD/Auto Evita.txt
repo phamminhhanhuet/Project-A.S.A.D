@@ -1,0 +1,36 @@
+main:
+TRISA = %00000011               ' Imposta RA0 e RA1 come Ingresso
+TRISC = 0                      ' Imposta la Porta C Di Uscita
+ADCON0 = %01000001        ' Fosc/8 , A/D abilitato
+OPTION_REG = %10000111        ' TMR0 prescaler, 1:256
+'ADCON1=%10001001
+ADCON1  = $80
+
+
+  While (TRUE)
+    SDX = ADC_Read(1)   'Lettura valore dal Sensore Destro
+    SSX = ADC_Read(0)   'Lettura valore dal Sensore Sinistro
+    If (SSX > 50) or (SDX > 50) Then
+     Avanti ()
+     Else
+         If (SSX - SDX > 0) Then
+           If SSX < 20 Then
+            Indietro ()
+            Delay_Ms (750)
+           End if
+           Sinistra ()
+         Else
+           If SDX < 20 Then
+              Indietro ()
+              Delay_Ms (750)
+           End if
+           Destra ()
+         End If
+    End If
+    'If (SSX - SDX < 8) or (SDX - SSX < 8) Then
+     ' If SSX < 50 Then
+      'Destra ()
+      'End If
+    'End If
+Wend
+End.

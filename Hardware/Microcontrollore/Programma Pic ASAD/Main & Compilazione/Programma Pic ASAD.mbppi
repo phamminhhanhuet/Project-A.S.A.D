@@ -1,0 +1,95 @@
+[DEVICE]
+Name=P16F877A
+Clock=4000000
+[MEMORY_MODEL]
+Value=0
+[BUILD_TYPE]
+Value=0
+[ACTIVE_TAB]
+Value=Programma Pic ASAD.mbas
+[USE_EEPROM]
+Value=0
+[EEPROM_DEFINITION]
+Value=
+[FILES]
+Count=1
+File0=Programma Pic ASAD.mbas
+[BINARIES]
+Count=0
+[IMAGES]
+Count=0
+ActiveImageIndex=-1
+[OPENED_FILES]
+Count=1
+File0=Programma Pic ASAD.mbas
+[EEPROM]
+Count=0
+[ACTIVE_COMMENTS_FILES]
+Count=0
+[OTHER_FILES]
+Count=0
+[SEARCH_PATH]
+Count=13
+Path0=C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\defs\
+Path1=C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\Uses\P16\
+Path2=G:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\
+Path3=F:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\
+Path4=C:\Programmi\Mikroelektronika\mikroBasic PRO for PIC\defs\
+Path5=C:\Programmi\Mikroelektronika\mikroBasic PRO for PIC\Uses\P16\
+Path6=E:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\
+Path7=D:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\
+Path8=D:\Progetto Esami ASAD\Programma Pic ASAD\
+Path9=F:\Progetto Esami ASAD\Programma Pic ASAD\
+Path10=C:\Program Files\Mikroelektronika\mikroBasic PRO for PIC\defs\
+Path11=C:\Program Files\Mikroelektronika\mikroBasic PRO for PIC\uses\P18\
+Path12=C:\Users\giannotta\Desktop\Programma Pic ASAD\
+[HEADER_PATH]
+Count=0
+[HEADERS]
+Count=0
+[PLDS]
+Count=0
+[Useses]
+Count=39
+File0=ADC
+File1=Button
+File2=C_Type
+File3=CAN_SPI
+File4=Compact_Flash_FAT16
+File5=Compact_Flash
+File6=Conversions
+File7=EEPROM
+File8=FLASH
+File9=Glcd_Fonts
+File10=Glcd
+File11=I2C
+File12=Keypad4x4
+File13=Lcd_Constants
+File14=Lcd
+File15=Manchester
+File16=Mmc_FAT16
+File17=Mmc
+File18=One_Wire
+File19=Port_Expander
+File20=PS2
+File21=PWM
+File22=RS485
+File23=Software_I2C
+File24=Software_SPI
+File25=Software_UART
+File26=Sound
+File27=SPI_Ethernet
+File28=SPI_Glcd
+File29=SPI_Lcd
+File30=SPI_Lcd8
+File31=SPI_T6963C
+File32=SPI
+File33=String
+File34=T6963C
+File35=Time
+File36=Trigon
+File37=Trigonometry
+File38=UART
+[EXPANDED NODES]
+Node1=Sources
+Count=1

@@ -1,0 +1,16 @@
+Sub Procedure AutoECattura ()
+ SIS = ADC_Read (2)
+ If SIS < 300 Then
+    AutoEvita ()
+    Else
+    Ape ()
+    FRMS ()
+    Delay_MS (1000)
+    Chi ()
+    Delay_Ms (5000)
+    Ape ()
+    Delay_MS (1000)
+    Indietro ()
+    Delay_MS (3000)
+
+End Sub

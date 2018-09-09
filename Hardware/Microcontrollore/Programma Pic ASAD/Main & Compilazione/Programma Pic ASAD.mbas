@@ -1,0 +1,230 @@
+Program Programma_Pic_ASAD
+'Dichiarazioni Varibili
+ Dim SSX As Integer  'Variabile Sensore Sinistro
+ Dim SDX As Integer  'Variabile Sensore Destro
+ Dim SIS As Integer  'Variabile Tempo Sensore Infrarosso Sharp
+ Dim T As Integer    'Variabile Tempo 2Byte
+ Dim BLU As Byte  'Variabile Dato Bluetooth
+
+'Sub Procedure
+Sub Procedure Avanti () 'Destra
+    PortD.2 = 1 'Porta Dedita alla Enable
+    PortD.1 = 1 'Porta Dedita a C (SX)
+    PortD.0 = 0 'Porta Dedita a D (SX)
+    PortC.1 = 1 'Porta Dedita a C (DX)
+    PortC.0 = 0 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure Indietro () 'Sinistra
+    PortD.2 = 1 'Porta Dedita alla Enable
+    PortD.1 = 0 'Porta Dedita a C (SX)
+    PortD.0 = 1 'Porta Dedita a D (SX)
+    PortC.1 = 0 'Porta Dedita a C (DX)
+    PortC.0 = 1 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure Destra () 'Avanti
+    PortD.2 = 1 'Porta Dedita alla Enable
+    PortD.1 = 1 'Porta Dedita a C (SX)
+    PortD.0 = 0 'Porta Dedita a D (SX)
+    PortC.1 = 0 'Porta Dedita a C (DX)
+    PortC.0 = 1 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure Sinistra () 'Indietro
+    PortD.2 = 1 'Porta Dedita alla Enable
+    PortD.1 = 0 'Porta Dedita a C (SX)
+    PortD.0 = 1 'Porta Dedita a D (SX)
+    PortC.1 = 1 'Porta Dedita a C (DX)
+    PortC.0 = 0 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure FRMS () 'Free Running Motor Stop
+    PortD.2 = 0 'Porta Dedita alla Enable
+    PortD.1 = 0 'Porta Dedita a C (SX)
+    PortD.0 = 0 'Porta Dedita a D (SX)
+    PortC.1 = 0 'Porta Dedita a C (DX)
+    PortC.0 = 0 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure FMS () 'Fast Motor Stop
+    PortD.2 = 1 'Porta Dedita alla Enable
+    PortD.1 = 1 'Porta Dedita a C (SX)
+    PortD.0 = 1 'Porta Dedita a D (SX)
+    PortC.1 = 1 'Porta Dedita a C (DX)
+    PortC.0 = 1 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure Ape() 'Apertura Pinza
+  PortC.2 = 1 'Apertura Pinza
+  For T = 1 to  14 ' Tempo Apertura
+  PortC.3 = 1  'Clock 65Hz 1 Semi-Periodo
+  Delay_Ms (7) 'Clock 65Hz
+  PortC.3 = 0  'Clock 65Hz 2 Semi-Periodo
+  Delay_Ms (7) 'Clock 65 Hz
+  Next T
+  'Delay_ms(2000)  ' Istruzioni Succesive
+End Sub
+Sub Procedure Chi() 'Chiusura Pinza
+  PortC.2 = 0 'Chiusura Pinza
+  For T = 1 to  17
+    'Tempo Chiusura
+  PortC.3 = 1  'Clock 65Hz 1 Semi-Periodo
+  Delay_Ms (7) 'Clock 65Hz
+  PortC.3 = 0  'Clock 65Hz 2 Semi-Periodo
+  Delay_Ms (7) 'Clock 65 Hz
+  Next T
+  'Delay_Ms (4000)  ' Istruzioni Succesive
+End Sub
+Sub Procedure AutoEvita () 'Programma 1 Modalità Auto-Evita
+
+    SDX = ADC_Read(1)   'Lettura valore dal Sensore Destro
+    SSX = ADC_Read(0)   'Lettura valore dal Sensore Sinistro
+    If (SSX > 50) or (SDX > 50) Then
+     Avanti ()
+     Else
+         If (SSX - SDX > 0) Then
+           If SSX < 20 Then
+            Indietro ()
+            Delay_Ms (750)
+           End if
+           Sinistra ()
+         Else
+           If SDX < 20 Then
+              Indietro ()
+              Delay_Ms (750)
+           End if
+           Destra ()
+         End If
+    End If
+    'If (SSX - SDX < 8) or (SDX - SSX < 8) Then
+     ' If SSX < 50 Then
+      'Destra ()
+      'End If
+    'End If
+
+End Sub
+Sub Procedure Cattura ()
+ SIS = ADC_Read(2)   'Lettura valore dal Sensore Infrarosso Sharp PortA.2
+ If SIS > 350  Then
+  Ape()
+
+ End If
+ If SIS > 575 Then
+ 'delay_ms(3000)
+ Chi()
+ Delay_Ms (10000)
+  End if
+  End Sub
+Sub Procedure AE ()
+ SIS = ADC_Read (2)
+ If SIS < 300 Then
+    AutoEvita ()
+    Else
+    Ape ()
+    FRMS ()
+    Delay_MS (1000)
+    Chi ()
+    Delay_Ms (5000)
+    Ape ()
+    Delay_MS (1000)
+    Indietro ()
+    Delay_MS (3000)
+    End If
+End Sub
+Sub Procedure Manuale ()
+    If BLU = %10000001 Then'A
+    Avanti ()
+    Else If BLU = %10001001 Then 'I
+    Indietro ()
+    Else If BLU = %10000100 Then 'D
+    Destra ()
+    Else If BLU = %10110011 Then 'S
+    Sinistra ()
+  End If
+  End If
+  End If
+  End If
+  End Sub
+Sub Procedure Ins()
+    SDX = ADC_Read(1)   'Lettura valore dal Sensore Destro
+    SSX = ADC_Read(0)   'Lettura valore dal Sensore Sinistro
+    If (SSX > 40) or (SDX > 40) Then
+     FRMS ()
+     Else
+     Avanti ()
+       If SSX < 20 Then  'sX
+            Sinistra()
+       End if
+       If SDX < 20 Then   'dx
+            Destra()
+       End if
+     End If
+End sub
+
+
+Main:
+'Dichiarazioni Porte TRIS & Impostazioni Convertitore A/D
+TRISA = %00000111               ' Imposta RA0,RA1 e RA2 come ingresso
+PORTB = 0
+TRISB = 0
+ADCON0 = %01000001        ' Fosc/8 , A/D abilitato
+OPTION_REG = %10000111        ' TMR0 prescaler, 1:256
+TRISC = %10000000              ' Imposta le 0;1;2;3;4;5;6 Porta C Di Uscita e la porta 7 di Ingresso   (6RX;7TX Bluetooth)
+TRISD = 0                      ' Imposta tutta la Porta D di Uscita
+'ADCON1 = %11001100
+ADCON1  = $80
+UART1_Init(115200)    ' Inizializza il Modulo UART con Velocità = 115200
+Delay_ms(100)         '  Tempo di Attesa per stabilizzare il Modulo UART
+'Inizio Programma
+While 1                         ' Ciclo Infinito
+  If (UART1_Data_Ready() = 1) then  'Se il dato è ricevuto...
+      BLU = UART1_Read() 'Legge i Dati Ricevuto e lo mette dentro la variabile
+  End If
+   If BLU = %01110001 Then 'AutoEvita '1
+   AutoEvita ()
+   Else If BLU = %01110000 Then  'Stop '0
+   FRMS ()
+   Else If BLU = %01110011 Then  'Manuale '3
+   Goto Manual
+   Else If BLU = %01110010 Then 'AutoEvita e Cattura '2
+   AE ()
+   Else If BLU = %01110100 Then 'Inseguitore '4
+   Ins()
+   End If
+   End If
+   End If
+   End If
+   End If
+   Wend
+   Manual:
+   While 1
+   If (UART1_Data_Ready() = 1) then  'Se il dato è ricevuto...
+      BLU = UART1_Read() 'Legge i Dati Ricevuto e lo mette dentro la variabile
+    If BLU = %10000001 Then'A
+    Avanti ()
+    Else If BLU = %10001001 Then 'I
+    Indietro ()
+    Else If BLU = %10000100 Then 'D
+    Destra ()
+    Else If BLU = %10110011 Then 'S
+    Sinistra ()
+    Else If BLU = %10000110 Then 'F
+    FRMS ()
+    Else If BLU = %01110000 Then'0
+    Goto Main
+    Else If BLU = %01110001 Then '1
+    Goto Main
+    Else If BLU = %01110010 Then '2
+    Goto Main
+    Else If BLU = %10110000 Then 'P
+    Ape ()
+    Else If BLU = %10110001 Then 'Q
+    Chi ()
+  End If
+  End If
+  End If
+  End If
+  End If
+  End If
+  End If
+  End If
+  End If
+  End If
+  End If
+  Wend
+  End.

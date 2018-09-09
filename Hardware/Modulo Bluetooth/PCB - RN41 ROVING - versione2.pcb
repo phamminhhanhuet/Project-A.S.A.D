@@ -1,0 +1,708 @@
+Contents: CIRCAD Version 5.0 Data File.
+
+File Name: M:\progetto robot\PCB - RN41 ROVING - versione2.pcb
+File Type: PCB
+File Date: 05/02/11
+File Time: 11:59 pm
+
+Units:: Default:1.0000mm Table:1000.0µm,0.1cm,0.001m,0.039370079"
+ZeroPoint:: X:0 Y:0
+Gridsnaps:: Current:.001" Index:1 Table:.001",.005",.025",.100",.025mm
+Display:: Layer:8 DrawModes:00030607 DotSpacing:2.54 DotColor:FFFFFF BackgroundColor:909090 HighlightColor:FFFFFF AttentionColor:FFFF00
+Print:: Flags:35,0,24 Bounds:0,0;0,0 Scaling:1
+Layer:: Type:0 Screen:+AA00AA Print:+FFFFFF Name:Pad Master
+Layer:: Type:4 Screen:+FFFF00 Print:-0000FF Name:Symbols
+Layer:: Type:7 Screen:+00AA00 Print:-FF55FF Name:CAM Control
+Layer:: Type:0 Screen:+000000 Print:+FFFFFF Name:Top Silk
+Layer:: Type:8 Screen:+555555 Print:-AAAAAA Name:Bottom Silk
+Layer:: Type:1 Screen:-55AA55 Print:-AA55AA Name:Top Mask
+Layer:: Type:9 Screen:-AA55AA Print:-55AA55 Name:Bottom Mask
+Layer:: Type:2 Screen:+AA0000 Print:-55FFFF Name:Top Copper
+Layer:: Type:10 Screen:+0000AA Print:+FFFFFF Name:Bottom Copper
+Layer:: Type:3 Screen:+FF5555 Print:-00AAAA Name:Vcc
+Layer:: Type:3 Screen:+5555FF Print:-AAAA00 Name:Gnd
+Layer:: Type:2 Screen:+5555FF Print:-AAAA00 Name:Mid Layer 1
+Layer:: Type:2 Screen:+55FF55 Print:-AA00AA Name:Mid Layer 2
+Layer:: Type:2 Screen:+55FFFF Print:-AA0000 Name:Mid Layer 3
+Layer:: Type:2 Screen:+FF5555 Print:-00AAAA Name:Mid Layer 4
+Layer:: Type:7 Screen:+FFAA00 Print:-0055FF Name:Top Iso
+Layer:: Type:7 Screen:+00AAFF Print:-FF5500 Name:Bottom Iso
+Layer:: Type:7 Screen:+FFFF00 Print:+00FFFF Name:Ratnest
+NetScan:: LineToLine:.008" LineToPad:.012" PadToPad:.016" RatLine:.011"
+FloodFill:: FloodToLine:.009" FloodToPad:.013" FloodLine:.011" HatchGrid:.025" TargetLayer:0
+TopIsolation:: PassCount:3 IsoTool:.010" IsoOverlap:.003" IsoClearance:.000" FloodTool:.000" FloodOverlap:.000" FloodClearance:.000" TargetLayer:15 SourceLayers:0,2,7
+BottomIsolation:: PassCount:3 IsoTool:.010" IsoOverlap:.003" IsoClearance:.000" FloodTool:.000" FloodOverlap:.000" FloodClearance:.000" TargetLayer:16 SourceLayers:0,2,8
+Library:: Name:THD.LIB
+Library:: Name:SMD.LIB
+Library:: Name:PCB.LIB
+GerberOut:: MaskPadSwell:.010" StencilPadShrink:.005" PlanePadSwell:.005" PlaneHoleSwell:.030" FloodLineWidth:.002"
+GerberFile:: Type:6 Suffix:TSS Layers:3
+GerberFile:: Type:14 Suffix:BSS Layers:4
+GerberFile:: Type:2 Suffix:TSM Layers:5
+GerberFile:: Type:10 Suffix:BSM Layers:6
+GerberFile:: Type:0 Suffix:TOP Layers:7
+GerberFile:: Type:8 Suffix:BOT Layers:8
+GerberFile:: Type:4 Suffix:DRL
+GerberFile:: Type:7 Suffix:LST
+GerberFile:: Type:5 Suffix:SYM Layers:1
+PlaceXYDimension:: Size:.096"
+DefaultLine:: Width:.50mm Style:0
+DefaultArc:: Radius:.106066" Width:.030" Angle:.375 Sweep:.982388
+DefaultPad:: Type:T2 Size:1.3mm,1.8mm Hole:.4mm Pin:25
+DefaultText:: Height:.040" Length:1 Data:PIO11
+DefaultVia:: Type:T3 Size:.050" Hole:.028"
+
+Component:: Flags:4 Bounds:-.127,-.127;254.127,190.627 Name:"$$BOX"
+Line:: Layer:"Symbols" Width:.010" Vertices:0,0;254,0
+Line:: Layer:"Symbols" Width:.010" Vertices:254,0;254,190.5
+Line:: Layer:"Symbols" Width:.010" Vertices:254,190.5;0,190.5
+Line:: Layer:"Symbols" Width:.010" Vertices:0,190.5;0,0
+EndComp:: InsertionPoint:0,0
+Component:: Flags:4 Bounds:211.963,149.098;254.127,190.627 Name:"$$DTD"
+Text:: Layer:"Symbols" InsertionPoint:212.09,144.78 Height:.072" Length:24.9936 Data:Board type: FR4
+Text:: Layer:"Symbols" InsertionPoint:212.09,141.605 Height:.072" Length:33.8328 Data:Board thickness: .062"
+Text:: Layer:"Symbols" InsertionPoint:212.09,138.43 Height:.072" Length:29.2608 Data:Copper weight: 2oz
+Text:: Layer:"Symbols" InsertionPoint:212.09,135.255 Height:.072" Length:22.5552 Data:Layer count: 2
+Text:: Layer:"Symbols" InsertionPoint:212.09,130.81 Height:.072" Length:30.48 Lines:1 Data:All dimensions are inÿinches.
+Text:: Layer:"Symbols" InsertionPoint:212.09,123.825 Height:.072" Length:39.9288 Lines:3 Data:Board should have greenÿsolder mask over bareÿcopper (SMOBC) with whiteÿsilk screening on top.
+Text:: Layer:"Symbols" InsertionPoint:212.09,111.125 Height:.072" Length:39.9288 Lines:1 Data:View is from the top sideÿof the board.
+Text:: Layer:"Symbols" InsertionPoint:217.17,184.785 Height:.072" Length:5.7912 Anchor:B Data:Tool
+Text:: Layer:"Symbols" InsertionPoint:217.17,181.61 Height:.072" Length:6.7056 Anchor:B Data:Code
+Text:: Layer:"Symbols" InsertionPoint:233.045,187.96 Height:.072" Length:23.1648 Anchor:B Data:Drill tape data
+Text:: Layer:"Symbols" InsertionPoint:228.6,184.785 Height:.072" Length:5.7912 Anchor:B Data:Hole
+Text:: Layer:"Symbols" InsertionPoint:228.6,181.61 Height:.072" Length:5.4864 Anchor:B Data:Size
+Text:: Layer:"Symbols" InsertionPoint:238.76,184.785 Height:.072" Length:4.8768 Anchor:B Data:Sym
+Text:: Layer:"Symbols" InsertionPoint:238.76,181.61 Height:.072" Length:3.9624 Anchor:B Data:bol
+Text:: Layer:"Symbols" InsertionPoint:248.285,181.61 Height:.072" Length:7.9248 Anchor:B Data:Count
+Text:: Layer:"Symbols" InsertionPoint:248.285,184.785 Height:.072" Length:5.7912 Anchor:B Data:Hole
+Line:: Layer:"Symbols" Width:.010" Vertices:212.09,190.5;254,190.5
+Line:: Layer:"Symbols" Width:.010" Vertices:254,190.5;254,149.225
+Line:: Layer:"Symbols" Width:.010" Vertices:254,149.225;212.09,149.225
+Line:: Layer:"Symbols" Width:.010" Vertices:212.09,149.225;212.09,190.5
+Line:: Layer:"Symbols" Width:.010" Vertices:212.09,187.325;254,187.325
+Line:: Layer:"Symbols" Width:.010" Vertices:212.09,180.975;254,180.975
+Line:: Layer:"Symbols" Width:.010" Vertices:222.25,187.325;222.25,149.225
+Line:: Layer:"Symbols" Width:.010" Vertices:234.95,187.325;234.95,149.225
+Line:: Layer:"Symbols" Width:.010" Vertices:242.57,187.325;242.57,149.225
+EndComp:: InsertionPoint:254,190.5
+Component:: Flags:4 Bounds:164.973,-.127;254.127,31.877 Name:"$$TTL"
+Text:: Layer:"Symbols" InsertionPoint:166.37,27.94 Height:.060" Length:3.302 Data:Co:
+Text:: Layer:"Symbols" InsertionPoint:166.37,21.59 Height:.060" Length:6.096 Data:Title:
+Text:: Layer:"Symbols" InsertionPoint:166.37,15.24 Height:.060" Length:7.874 Data:Board:
+Text:: Layer:"Symbols" InsertionPoint:166.37,8.89 Height:.060" Length:7.62 Data:Drawn:
+Text:: Layer:"Symbols" InsertionPoint:166.37,2.54 Height:.060" Length:6.35 Data:Date:
+Text:: Layer:"Symbols" InsertionPoint:177.8,27.305 Height:.126" Length:1.6002 Data:?
+Text:: Layer:"Symbols" InsertionPoint:177.8,20.955 Height:.126" Length:1.6002 Data:?
+Text:: Layer:"Symbols" InsertionPoint:177.8,14.605 Height:.126" Length:1.6002 Data:?
+Text:: Layer:"Symbols" InsertionPoint:177.8,8.255 Height:.126" Length:1.6002 Data:?
+Text:: Layer:"Symbols" InsertionPoint:177.8,1.905 Height:.126" Length:1.6002 Data:?
+Text:: Layer:"Symbols" InsertionPoint:228.6,15.24 Height:.072" Length:12.192 Data:Revision:
+Text:: Layer:"Symbols" InsertionPoint:228.6,8.89 Height:.072" Length:6.4008 Data:Size:
+Text:: Layer:"Symbols" InsertionPoint:228.6,1.905 Height:.072" Length:8.5344 Data:Sheet
+Text:: Layer:"Symbols" InsertionPoint:240.03,1.905 Height:.126" Length:1.6002 Data:1
+Text:: Layer:"Symbols" InsertionPoint:241.3,8.255 Height:.126" Length:2.1336 Data:A
+Text:: Layer:"Symbols" InsertionPoint:244.475,14.605 Height:.126" Length:2.1336 Data:A
+Text:: Layer:"Symbols" InsertionPoint:244.475,1.905 Height:.072" Length:3.048 Data:of
+Text:: Layer:"Symbols" InsertionPoint:249.555,1.905 Height:.126" Length:1.6002 Data:1
+Line:: Layer:"Symbols" Width:.010" Vertices:165.1,0;165.1,31.75
+Line:: Layer:"Symbols" Width:.010" Vertices:165.1,31.75;254,31.75
+Line:: Layer:"Symbols" Width:.010" Vertices:165.1,25.4;254,25.4
+Line:: Layer:"Symbols" Width:.010" Vertices:165.1,19.05;254,19.05
+Line:: Layer:"Symbols" Width:.010" Vertices:254,12.7;165.1,12.7
+Line:: Layer:"Symbols" Width:.010" Vertices:165.1,6.35;254,6.35
+Line:: Layer:"Symbols" Width:.010" Vertices:165.1,0;254,0
+Line:: Layer:"Symbols" Width:.010" Vertices:254,0;254,31.75
+EndComp:: InsertionPoint:254,0
+Pad:: Type:T2 Center:46.51,48.323 Size:2mm,.8mm Hole:.0001mm Pin:1
+Pad:: Type:T2 Center:46.51,47.173 Size:2mm,.8mm Hole:.0001mm Pin:2
+Pad:: Type:T2 Center:46.51,45.923 Size:2mm,.8mm Hole:.0001mm Pin:3
+Pad:: Type:T2 Center:46.535,44.723 Size:2mm,.8mm Hole:.0001mm Pin:4
+Pad:: Type:T2 Center:46.535,43.573 Size:2mm,.8mm Hole:.0001mm Pin:5
+Pad:: Type:T2 Center:46.535,42.373 Size:2mm,.8mm Hole:.0001mm Pin:6
+Pad:: Type:T2 Center:46.535,41.148 Size:2mm,.8mm Hole:.0001mm Pin:7
+Pad:: Type:T2 Center:46.535,39.948 Size:2mm,.8mm Hole:.0001mm Pin:8
+Pad:: Type:T2 Center:46.535,38.773 Size:2mm,.8mm Hole:.0001mm Pin:9
+Pad:: Type:T2 Center:46.535,37.598 Size:2mm,.8mm Hole:.0001mm Pin:10
+Pad:: Type:T2 Center:46.535,36.373 Size:2mm,.8mm Hole:.0001mm Pin:11
+Pad:: Type:T2 Center:46.535,35.148 Size:2mm,.8mm Hole:.0001mm Pin:12
+Pad:: Type:T2 Center:59.735,35.148 Size:2mm,.8mm Hole:.0001mm Pin:13
+Pad:: Type:T2 Center:59.735,36.373 Size:2mm,.8mm Hole:.0001mm Pin:14
+Pad:: Type:T2 Center:59.735,37.598 Size:2mm,.8mm Hole:.0001mm Pin:15
+Pad:: Type:T2 Center:59.735,38.773 Size:2mm,.8mm Hole:.0001mm Pin:16
+Pad:: Type:T2 Center:59.71,39.948 Size:2mm,.8mm Hole:.0001mm Pin:17
+Pad:: Type:T2 Center:59.735,41.148 Size:2mm,.8mm Hole:.0001mm Pin:18
+Pad:: Type:T2 Center:59.735,42.373 Size:2mm,.8mm Hole:.0001mm Pin:19
+Pad:: Type:T2 Center:59.735,43.573 Size:2mm,.8mm Hole:.0001mm Pin:20
+Pad:: Type:T2 Center:59.735,44.748 Size:2mm,.8mm Hole:.0001mm Pin:21
+Pad:: Type:T2 Center:59.735,45.948 Size:2mm,.8mm Hole:.0001mm Pin:22
+Pad:: Type:T2 Center:59.735,47.173 Size:2mm,.8mm Hole:.0001mm Pin:23
+Pad:: Type:T2 Center:59.735,48.348 Size:2mm,.8mm Hole:.0001mm Pin:24
+Pad:: Type:T2 Center:49.035,32.373 Size:.8mm,2mm Hole:.0001mm Pin:35
+Pad:: Type:T2 Center:57.235,32.373 Size:.8mm,2mm Hole:.0001mm Pin:30
+Pad:: Type:T2 Center:56.21,32.373 Size:.8mm,2mm Hole:.0001mm Pin:28
+Pad:: Type:T2 Center:54.935,32.373 Size:.8mm,2mm Hole:.0001mm Pin:31
+Pad:: Type:T2 Center:53.685,32.373 Size:.8mm,2mm Hole:.0001mm Pin:32
+Pad:: Type:T2 Center:52.535,32.373 Size:.8mm,2mm Hole:.0001mm Pin:33
+Pad:: Type:T2 Center:51.335,32.373 Size:.8mm,2mm Hole:.0001mm Pin:34
+Pad:: Type:T2 Center:50.035,32.373 Size:.8mm,2mm Hole:.0001mm Pin:29
+Pad:: Type:T2 Center:57.735,50.548 Size:1.3mm,1.8mm Hole:.4mm Pin:25
+Pad:: Type:T2 Center:54.535,50.548 Size:1.3mm,2.4mm Hole:.4mm Pin:27
+Pad:: Type:T2 Center:38.1,50.8 Size:2.5mm,1.5mm Hole:.8mm Pin:1
+Pad:: Type:T2 Center:38.1,48.26 Size:2.5mm,1.5mm Hole:.8mm Pin:2
+Pad:: Type:T2 Center:38.1,45.72 Size:2.5mm,1.5mm Hole:.8mm Pin:3
+Pad:: Type:T2 Center:38.1,43.18 Size:2.5mm,1.5mm Hole:.8mm Pin:4
+Pad:: Type:T2 Center:38.1,40.64 Size:2.5mm,1.5mm Hole:.8mm Pin:5
+Pad:: Type:T2 Center:38.1,38.1 Size:2.5mm,1.5mm Hole:.8mm Pin:6
+Pad:: Type:T2 Center:38.1,35.56 Size:2.5mm,1.5mm Hole:.8mm Pin:7
+Pad:: Type:T2 Center:38.1,33.02 Size:2.5mm,1.5mm Hole:.8mm Pin:8
+Pad:: Type:T2 Center:38.1,30.48 Size:2.5mm,1.5mm Hole:.8mm Pin:9
+Pad:: Type:T2 Center:38.1,27.94 Size:2.5mm,1.5mm Hole:.8mm Pin:10
+Pad:: Type:T2 Center:66.04,50.8 Size:2.5mm,1.5mm Hole:.8mm Pin:20
+Pad:: Type:T2 Center:66.04,48.26 Size:2.5mm,1.5mm Hole:.8mm Pin:19
+Pad:: Type:T2 Center:66.04,45.72 Size:2.5mm,1.5mm Hole:.8mm Pin:18
+Pad:: Type:T2 Center:66.04,43.18 Size:2.5mm,1.5mm Hole:.8mm Pin:17
+Pad:: Type:T2 Center:66.04,40.64 Size:2.5mm,1.5mm Hole:.8mm Pin:16
+Pad:: Type:T2 Center:66.04,38.1 Size:2.5mm,1.5mm Hole:.8mm Pin:15
+Pad:: Type:T2 Center:66.04,35.56 Size:2.5mm,1.5mm Hole:.8mm Pin:14
+Pad:: Type:T2 Center:66.04,33.02 Size:2.5mm,1.5mm Hole:.8mm Pin:13
+Pad:: Type:T2 Center:66.04,30.48 Size:2.5mm,1.5mm Hole:.8mm Pin:12
+Pad:: Type:T2 Center:66.04,27.94 Size:2.5mm,1.5mm Hole:.8mm Pin:11
+Line:: Layer:"Top Silk" Width:.20mm Vertices:17.526,76.073;17.145,12.573
+Line:: Layer:"Top Silk" Width:.20mm Vertices:17.145,12.573;88.9,12.573
+Line:: Layer:"Top Silk" Width:.20mm Vertices:88.9,12.573;89.281,76.073
+Line:: Layer:"Top Silk" Width:.20mm Vertices:17.526,76.073;89.281,76.073
+Line:: Layer:"Top Copper" Width:.1mm Vertices:45.085,60.96;45.085,53.594
+Line:: Layer:"Top Copper" Width:.1mm Vertices:45.085,53.594;60.96,53.594
+Line:: Layer:"Top Copper" Width:.1mm Vertices:60.96,53.594;60.96,60.96
+Line:: Layer:"Top Copper" Width:.1mm Vertices:60.96,60.96;45.085,60.96
+Text:: Layer:"Top Copper" InsertionPoint:46.609,56.134 Height:.060" Length:11.43 Data: ANTENNA
+Line:: Layer:"Top Copper" Width:.1mm Vertices:45.212,53.213;45.212,31.115
+Line:: Layer:"Top Copper" Width:.1mm Vertices:45.212,31.115;60.96,31.115
+Line:: Layer:"Top Copper" Width:.1mm Vertices:60.96,31.115;60.96,53.213
+Line:: Layer:"Top Copper" Width:.1mm Vertices:60.96,53.213;45.212,53.213
+Text:: Layer:"Top Copper" InsertionPoint:50.546,41.021 Height:.060" Length:5.08 Data:RN41
+Text:: Layer:"Top Silk" InsertionPoint:39.878,14.859 Height:.060" Length:46.736 Style:3 Data:RN 41 ROVING NETWORKS BLUETOOTH
+Line:: Layer:"Top Copper" Width:.10mm Vertices:58.547,52.832;60.579,52.832
+Line:: Layer:"Top Copper" Width:.10mm Vertices:60.579,52.832;60.579,51.435
+Line:: Layer:"Top Copper" Width:.10mm Vertices:60.579,51.435;58.547,51.435
+Line:: Layer:"Top Copper" Width:.10mm Vertices:58.547,51.435;58.547,52.832
+Line:: Layer:"Top Copper" Width:.10mm Vertices:45.466,52.832;45.466,51.435
+Line:: Layer:"Top Copper" Width:.10mm Vertices:45.466,51.435;47.498,51.435
+Line:: Layer:"Top Copper" Width:.10mm Vertices:47.498,51.435;47.498,52.832
+Line:: Layer:"Top Copper" Width:.10mm Vertices:45.466,52.832;47.498,52.832
+Line:: Layer:"Top Copper" Width:.10mm Vertices:45.974,32.258;47.498,32.258
+Line:: Layer:"Top Copper" Width:.10mm Vertices:47.498,32.258;47.498,33.782
+Line:: Layer:"Top Copper" Width:.10mm Vertices:47.498,33.782;45.466,33.782
+Line:: Layer:"Top Copper" Width:.10mm Vertices:45.466,33.782;45.466,32.258
+Line:: Layer:"Top Copper" Width:.10mm Vertices:45.466,32.258;45.974,32.258
+Line:: Layer:"Top Copper" Width:.10mm Vertices:58.547,33.782;58.547,32.258
+Line:: Layer:"Top Copper" Width:.10mm Vertices:58.547,32.258;60.579,32.258
+Line:: Layer:"Top Copper" Width:.10mm Vertices:60.579,32.258;60.579,33.782
+Line:: Layer:"Top Copper" Width:.10mm Vertices:60.579,33.782;58.547,33.782
+Line:: Layer:"Top Silk" Width:.10mm Vertices:35.56,53.34;35.56,25.4
+Line:: Layer:"Top Silk" Width:.10mm Vertices:35.56,25.4;68.58,25.4
+Line:: Layer:"Top Silk" Width:.10mm Vertices:68.58,25.4;68.58,53.34
+Line:: Layer:"Top Silk" Width:.10mm Vertices:68.58,53.34;35.56,53.34
+Text:: Layer:"Top Silk" InsertionPoint:33.02,48.26 Height:.060" Length:0 Style:3
+Text:: Layer:"Top Silk" InsertionPoint:33.02,46.99 Height:.060" Length:0 Style:3
+Text:: Layer:"Top Silk" InsertionPoint:33.02,47.625 Height:.060" Length:0 Style:3
+Text:: Layer:"Top Silk" InsertionPoint:30.734,47.879 Height:.040" Length:4.064 Data:PIO10
+Text:: Layer:"Top Silk" InsertionPoint:32.385,45.085 Height:.040" Length:0
+Text:: Layer:"Top Silk" InsertionPoint:30.607,45.339 Height:.040" Length:4.064 Data:PIO11
+Text:: Layer:"Top Silk" InsertionPoint:30.48,42.672 Height:.040" Length:3.3867 Data:MOSI
+Text:: Layer:"Top Silk" InsertionPoint:33.02,40.64 Height:.040" Length:0
+Text:: Layer:"Top Silk" InsertionPoint:30.48,40.259 Height:.040" Length:3.2173 Data:PIO6
+Text:: Layer:"Top Silk" InsertionPoint:30.48,37.719 Height:.040" Length:3.2173 Data:PIO7
+Text:: Layer:"Top Silk" InsertionPoint:30.353,32.639 Height:.040" Length:2.7093 Data:CLK
+Text:: Layer:"Top Silk" InsertionPoint:30.353,34.925 Height:.040" Length:4.7413 Data:RESET
+Text:: Layer:"Top Silk" InsertionPoint:30.48,27.432 Height:.040" Length:2.7093 Data:GND
+Text:: Layer:"Top Silk" InsertionPoint:30.48,29.972 Height:.040" Length:3.7253 Data:3.3 V
+Text:: Layer:"Top Silk" InsertionPoint:70.485,27.305 Height:.040" Length:1.6933 Data:RX
+Text:: Layer:"Top Silk" InsertionPoint:70.485,29.845 Height:.040" Length:1.6933 Data:TX
+Text:: Layer:"Top Silk" InsertionPoint:70.485,32.385 Height:.040" Length:2.7093 Data:RTS
+Text:: Layer:"Top Silk" InsertionPoint:70.485,34.925 Height:.040" Length:2.7093 Data:CTS
+Text:: Layer:"Top Silk" InsertionPoint:70.485,37.465 Height:.040" Length:3.2173 Data:PIO2
+Text:: Layer:"Top Silk" InsertionPoint:69.85,40.005 Height:.040" Length:0
+Text:: Layer:"Top Silk" InsertionPoint:70.485,40.64 Height:.040" Length:0
+Text:: Layer:"Top Silk" InsertionPoint:70.485,40.005 Height:.040" Length:3.2173 Data:PIO3
+Text:: Layer:"Top Silk" InsertionPoint:70.485,42.545 Height:.040" Length:3.2173 Data:PIO5
+Text:: Layer:"Top Silk" InsertionPoint:70.485,45.085 Height:.040" Length:3.2173 Data:PIO4
+Text:: Layer:"Top Silk" InsertionPoint:70.485,47.625 Height:.040" Length:1.6933 Data:CS
+Text:: Layer:"Top Silk" InsertionPoint:70.485,50.165 Height:.040" Length:3.3867 Data:MISO
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:51.308,49.403;51.308,31.623
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.323,49.403;51.181,49.403
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.451,31.877;52.451,50.165
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.451,50.165;43.561,50.165
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.561,50.165;41.402,48.26
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.482,45.974;45.085,45.974
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.482,44.704;45.212,44.704
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.958,36.322;46.101,36.322
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.482,35.052;45.339,35.052
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.18,27.94;41.275,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.038,32.258;50.038,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.261,32.385;56.261,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.261,27.94;49.657,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.817,35.052;61.341,35.052
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.341,35.052;61.595,34.671
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.595,34.671;61.595,28.702
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.595,28.702;62.484,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.484,27.94;65.151,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.817,36.322;61.595,36.322
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.595,36.322;62.484,35.306
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.484,35.306;62.484,31.496
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.484,31.496;63.373,30.48
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.373,30.48;65.151,30.48
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.198,37.465;61.849,37.465
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.849,37.465;63.5,35.687
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,35.687;63.5,33.782
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,33.782;64.262,33.02
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.262,33.02;65.151,33.02
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.944,38.735;62.103,38.735
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.103,38.735;65.024,35.56
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.071,42.291;61.849,42.291
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.849,42.291;62.484,41.656
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.484,41.656;62.484,39.878
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.484,39.878;64.135,38.227
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,38.227;65.024,38.227
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.071,43.561;62.103,43.561
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.103,43.561;63.5,42.037
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,42.037;63.5,41.021
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,41.021;64.008,40.513
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.008,40.513;65.024,40.513
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.325,44.704;61.976,44.704
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.976,44.704;62.611,44.704
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.611,44.704;64.008,43.18
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.008,43.18;65.024,43.18
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.198,45.974;65.151,45.974
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.198,47.117;61.849,47.117
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.849,47.117;62.992,48.26
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.992,48.26;65.278,48.26
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.817,48.387;61.468,48.387
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.468,48.387;63.119,50.038
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.119,50.038;63.881,50.8
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.881,50.8;65.024,50.8
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.705,33.147;52.705,50.038
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:51.435,32.893;51.435,49.276
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:51.181,32.639;51.181,49.149
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.72,35.179;45.466,35.179
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.672,45.466;44.069,46.609
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.18,48.133;44.577,49.276
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.196,49.276;51.054,49.276
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.656,48.768;43.307,50.165
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.942,50.165;43.434,50.165
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.847,36.576;45.212,36.576
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.325,48.26;61.341,48.26
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.055,48.641;61.468,48.641
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.087,48.641;63.5,51.054
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,51.054;64.77,51.054
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,47.371;61.595,47.371
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.595,47.244;63.119,48.641
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.119,48.641;65.024,48.641
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.865,47.879;64.77,47.879
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.627,50.419;64.77,50.419
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.627,51.308;64.77,51.308
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.627,51.308;63.246,50.8
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.484,47.752;64.77,47.752
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,46.101;64.77,46.101
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,45.72;64.77,45.72
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.881,45.847;64.77,45.212
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,46.228;64.897,46.228
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,44.831;62.611,44.831
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,44.577;62.484,44.577
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.611,44.831;64.008,43.434
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.754,43.688;64.897,43.688
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,42.799;64.897,42.799
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.262,42.672;65.278,42.672
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,42.926;62.611,44.577
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.262,42.672;62.484,44.577
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.627,41.148;64.897,41.148
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.008,40.767;64.897,40.767
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,40.132;64.897,40.132
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,40.132;63.5,40.767
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,40.767;63.5,41.783
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.627,41.91;64.389,41.148
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.008,41.148;63.754,41.402
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.849,43.561;63.5,41.783
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.198,43.688;61.976,43.688
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.325,43.434;61.849,43.434
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,42.545;61.595,42.545
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,42.164;61.849,42.164
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.468,42.164;62.357,41.275
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.96,42.164;62.23,40.894
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.595,42.545;61.849,42.291
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.976,41.148;61.976,40.132
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.976,40.132;64.008,38.1
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.008,38.1;64.897,38.1
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.484,40.259;64.516,38.227
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,38.608;64.897,38.608
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.754,38.354;64.516,37.719
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.516,37.719;64.897,37.719
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.262,36.322;64.389,35.433
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.389,35.433;64.389,35.052
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.389,35.052;64.897,35.052
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.897,35.052;64.77,35.56
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.357,38.481;64.77,35.941
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.849,38.862;64.389,36.068
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.976,38.862;60.579,38.862
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.23,38.608;60.579,38.608
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,37.719;61.595,37.719
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.595,37.719;61.976,37.338
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.881,33.528;65.024,33.528
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.897,32.512;64.135,32.512
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,32.512;63.373,33.274
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.373,33.274;63.373,35.56
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.373,35.56;61.722,37.465
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,36.576;61.341,36.576
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.341,36.576;62.484,35.306
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.325,36.195;61.468,36.195
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.992,30.988;65.151,30.988
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:65.151,30.607;63.627,30.607
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:65.024,29.972;63.246,29.972
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.246,29.972;62.484,30.988
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.484,30.988;62.484,31.75
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.611,32.639;64.262,30.861
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,30.861;62.611,32.004
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.611,32.004;63.627,30.988
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,35.306;61.087,35.306
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.087,35.306;61.595,34.798
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:58.928,34.798;61.341,34.798
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.706,34.798;61.595,33.782
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.087,34.671;61.468,34.417
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.341,34.163;61.341,28.702
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.341,28.702;62.738,27.432
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.738,27.432;64.897,27.432
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.897,27.813;62.738,27.686
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:65.024,28.321;62.611,28.321
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.611,28.321;61.595,29.21
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:65.151,28.448;62.357,28.448
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.722,29.718;63.119,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.722,30.353;63.119,28.448
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.325,34.798;61.341,33.782
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:47.244,34.798;45.212,34.798
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.055,48.768;61.341,48.768
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.007,31.623;56.007,28.067
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.388,31.623;56.388,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.292,31.623;50.292,28.067
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:49.911,31.623;49.911,28.067
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.007,28.321;50.419,28.321
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.388,27.686;56.388,28.067
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.926,28.448;41.783,28.448
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.91,46.482;39.751,46.482
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.91,49.022;39.751,49.022
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.307,28.575;39.751,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.783,27.432;45.212,27.432
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.212,27.432;46.482,27.813
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.419,29.337;51.435,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:51.054,28.448;50.546,28.829
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.419,29.464;55.88,29.464
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.007,28.956;50.8,28.956
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:51.181,28.575;55.88,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.007,30.48;55.372,29.337
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.292,30.099;51.054,29.591
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.865,27.178;67.056,27.178
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.865,27.178;61.341,28.702
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.246,28.575;67.056,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,31.115;67.056,31.115
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,29.718;67.056,29.718
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,29.718;62.992,30.226
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.992,30.226;62.484,30.861
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.262,32.385;67.056,32.385
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,33.655;63.627,33.655
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.389,34.798;67.056,34.798
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,36.195;64.643,36.195
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,37.465;64.77,37.465
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,39.878;64.262,39.878
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.262,39.878;63.5,40.64
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,42.418;64.389,42.418
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.389,42.418;64.135,42.799
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.135,43.434;64.897,43.434
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,44.958;65.024,44.958
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:65.024,44.958;63.881,45.72
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,45.72;64.516,44.831
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.516,44.831;67.056,44.831
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.357,47.498;67.056,47.498
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.246,50.038;67.056,50.038
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,51.435;63.754,51.435
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.754,51.562;60.579,48.641
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.754,51.689;67.056,51.689
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,51.689;67.056,51.054
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.754,51.816;60.452,48.768
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.754,51.816;67.056,51.816
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.102,49.403;54.102,48.26
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.102,48.26;57.785,48.26
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.785,48.26;57.912,48.26
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.912,48.26;58.293,50.038
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:58.293,50.038;58.166,50.673
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:58.166,50.673;57.912,51.181
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.277,49.53;57.277,48.514
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.531,48.387;57.785,49.53
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.483,49.657;54.483,48.514
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.864,49.53;54.864,48.514
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.61,48.641;57.277,48.641
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.102,47.879;57.785,47.879
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.785,47.879;57.912,48.387
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.102,47.752;54.102,48.387
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.102,47.752;57.658,47.752
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.658,47.752;57.912,48.387
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.991,49.53;55.245,48.514
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.404,49.657;56.769,48.26
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.8,49.022;50.8,34.671
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.8,34.671;51.181,33.274
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.705,50.038;52.959,49.022
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.959,49.022;52.959,34.544
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.959,34.544;52.578,33.147
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.959,46.863;53.721,45.085
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:53.721,45.085;53.721,35.814
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:53.721,35.814;52.705,33.528
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:53.213,35.433;53.213,45.466
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:53.467,45.085;53.467,35.687
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.595,41.656;61.595,40.386
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.595,40.386;62.484,39.624
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.261,31.369;56.896,29.845
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.261,27.686;56.896,27.686
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.896,29.845;56.896,27.686
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.007,31.496;55.372,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.292,31.496;50.546,29.083
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.642,29.972;56.642,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:55.499,29.083;50.673,29.083
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.897,30.226;63.373,30.226
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.23,28.956;62.611,28.702
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:65.024,32.766;64.389,32.766
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.897,33.274;64.389,33.274
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.77,37.465;64.516,37.719
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:64.389,34.798;64.389,35.052
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.23,40.259;62.23,40.894
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.545,28.194;42.037,28.194
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.847,46.99;44.704,46.99
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.974,46.101;45.212,46.101
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.847,36.195;44.831,36.195
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.974,35.306;45.339,35.306
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.452,46.99;61.722,46.99
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:61.722,46.99;62.103,47.371
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.196,27.94;50.546,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.704,28.067;44.196,28.321
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.323,27.686;43.307,27.686
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.307,27.686;44.069,28.067
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:47.371,27.94;45.085,27.432
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.642,27.686;50.292,27.686
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.292,27.686;49.911,27.94
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.339,27.686;42.037,27.686
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.434,28.448;43.18,28.194
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,26.924;66.548,26.924
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,26.797;67.056,27.178
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:67.056,26.67;63.246,26.67
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.246,26.67;62.611,27.432
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.246,26.924;66.421,26.924
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.751,49.022;37.084,49.022
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.402,48.768;38.735,48.768
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.148,48.387;38.989,48.387
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.402,48.26;40.767,47.752
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.767,47.752;39.116,47.752
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.64,48.133;39.243,48.133
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.751,46.482;37.084,46.482
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.529,46.101;39.37,46.228
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.275,45.72;39.37,45.72
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.767,45.212;39.243,45.212
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.767,45.466;39.497,45.466
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.878,45.847;39.37,45.847
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.767,48.133;40.386,48.133
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.751,43.942;37.084,43.942
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.497,42.672;39.37,42.672
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.624,41.402;37.084,41.402
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.624,41.021;39.243,41.021
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.894,40.513;39.37,40.513
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.513,40.132;39.37,40.132
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.751,38.862;37.084,38.862
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.402,38.354;39.116,38.354
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.005,38.608;39.37,38.608
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.45,49.149;40.767,45.212
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.196,49.403;41.275,46.101
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.672,45.466;40.386,43.561
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.767,43.942;39.751,43.942
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.386,43.561;40.386,42.672
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.386,42.672;39.624,42.672
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.259,43.053;39.497,43.053
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.259,43.434;39.497,43.434
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.386,43.688;39.37,43.688
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.069,46.609;44.831,47.244
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.831,47.244;45.466,47.244
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.831,47.371;43.434,46.101
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.831,47.371;47.244,47.371
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.958,45.974;41.529,42.926
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.529,42.926;41.529,41.783
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.529,41.783;39.497,40.386
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.402,42.164;39.243,40.767
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.37,41.402;40.259,41.402
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.021,41.402;41.021,40.132
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.021,40.132;40.386,40.132
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.767,41.148;40.64,40.64
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.212,44.704;42.672,42.291
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.672,42.291;42.672,41.148
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.672,41.148;42.164,40.767
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,40.767;42.164,38.862
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,38.862;39.751,38.862
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,38.481;40.259,38.481
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,38.989;42.164,37.592
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,37.592;39.37,37.592
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.37,37.973;41.91,37.973
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.037,38.227;41.529,38.227
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.72,43.688;43.688,41.91
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.688,41.91;43.688,40.513
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.688,40.513;43.18,40.005
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.18,40.005;43.18,37.211
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.18,37.211;42.164,36.068
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,36.068;37.084,36.068
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.72,42.418;44.704,41.529
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.704,41.529;44.704,40.005
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.704,40.005;44.196,39.624
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.196,39.624;44.196,36.957
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.196,36.957;44.196,36.83
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.196,36.83;41.402,33.528
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.402,33.528;37.084,33.528
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.831,36.195;41.021,31.242
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.878,31.242;37.084,31.242
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.212,36.576;44.831,36.195
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.021,31.242;39.878,31.242
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.021,31.115;41.021,29.972
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.021,29.972;39.243,29.972
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.894,30.353;39.37,30.353
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.767,30.734;39.116,30.734
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.767,30.988;39.243,30.988
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.402,33.528;40.513,32.512
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.513,32.512;39.243,32.512
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.513,32.766;39.37,32.766
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.894,33.147;39.243,33.147
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,36.068;41.148,35.052
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.148,35.052;39.243,35.052
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.275,35.306;39.243,35.306
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.656,35.687;39.243,35.687
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.212,35.179;42.164,30.988
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,30.988;42.164,28.448
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:39.751,28.575;37.084,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.783,28.194;38.989,28.194
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.275,27.813;39.37,27.813
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.91,27.559;39.37,27.559
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.783,27.432;39.116,27.432
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.545,31.242;42.545,28.829
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.926,31.75;42.926,28.448
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.18,32.131;43.18,28.321
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.561,32.512;43.561,27.813
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.815,33.02;43.815,28.067
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.196,33.401;44.196,28.448
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.45,33.782;44.45,28.194
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.577,28.321;49.911,28.321
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.577,28.575;50.292,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.212,27.432;56.896,27.432
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.896,27.432;56.896,27.686
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:49.911,27.686;47.498,27.686
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.18,28.194;42.799,28.194
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.577,28.956;49.784,28.956
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.577,29.337;50.038,29.337
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:49.911,29.464;44.577,29.464
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:47.244,44.958;45.466,44.958
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.466,44.958;45.212,44.704
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.228,44.577;45.212,44.577
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.085,46.101;45.212,46.101
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.228,46.99;45.72,46.99
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.72,43.688;45.593,43.688
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.593,43.688;44.704,42.799
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.72,42.545;45.593,42.545
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.593,42.545;44.704,41.529
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.577,34.29;44.577,29.464
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.339,34.798;44.577,33.909
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.593,34.798;44.577,33.782
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.275,31.623;40.386,31.115
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.91,34.163;40.513,33.528
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.418,36.449;40.767,35.941
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.037,39.497;41.275,38.862
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.91,46.736;40.894,46.482
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.291,49.276;41.402,49.022
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.831,46.99;44.069,46.609
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.085,49.276;43.942,48.895
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.165,49.149;50.8,48.768
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:51.943,50.165;52.451,49.53
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.705,50.165;52.451,50.165
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:49.784,29.845;49.149,29.337
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.704,30.226;45.847,29.464
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.212,29.464;44.704,29.718
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.704,30.607;45.72,29.591
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.164,29.21;41.402,28.575
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.64,33.655;37.084,33.655
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.529,36.195;37.084,36.195
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.45,39.751;44.45,37.211
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.45,37.211;44.069,36.703
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.704,40.005;44.45,39.243
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.577,40.386;44.196,39.624
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.704,40.767;44.45,40.005
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.688,41.021;43.561,40.386
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:42.672,41.529;42.418,41.021
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.529,42.672;41.148,41.91
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.894,43.942;40.259,43.18
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.196,37.211;43.942,36.576
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.482,43.815;45.593,43.815
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.593,43.815;44.958,43.053
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.134,33.147;56.134,47.752
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.388,33.147;56.388,48.133
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.007,47.625;56.007,33.147
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:55.626,47.498;55.626,34.163
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:55.626,34.163;56.007,33.401
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.769,47.498;56.769,34.29
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.769,34.29;56.261,33.147
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.546,48.641;50.546,35.052
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:50.546,35.052;51.181,33.274
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:49.911,49.149;50.546,48.641
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:52.705,50.165;52.959,49.149
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.102,47.752;55.626,44.196
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.483,47.752;55.499,45.466
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.864,47.625;55.499,46.355
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:55.245,47.752;55.372,47.117
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:58.293,49.911;56.769,43.434
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.531,47.625;56.896,45.847
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.15,47.625;56.896,46.609
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.864,51.816;54.229,51.816
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.229,51.816;54.102,51.689
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.102,51.689;54.102,49.403
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:54.991,51.816;54.991,49.276
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:57.277,50.673;57.277,49.149
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:37.084,27.051;56.896,27.051
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.896,27.051;56.896,27.432
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.896,26.67;37.084,26.67
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:37.084,26.67;37.084,27.051
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:56.896,26.67;56.896,26.924
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:43.307,50.165;41.148,49.022
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.529,42.926;41.402,42.037
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.386,41.529;39.751,41.275
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.275,41.529;40.767,40.894
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.148,41.402;40.894,40.894
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.529,41.91;40.894,41.021
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.529,41.783;41.021,41.275
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:49.784,29.972;49.022,29.464
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:49.911,31.369;49.657,29.464
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:63.5,34.036;63.881,33.528
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.069,45.212;41.529,42.799
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.085,46.101;41.656,43.053
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.831,47.371;44.45,47.371
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.45,47.371;40.259,43.307
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.72,45.72;44.704,45.72
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.847,42.164;45.466,42.164
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.355,42.545;45.72,42.545
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.355,42.164;45.72,42.164
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.355,36.576;45.847,36.576
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:46.228,36.195;45.466,36.195
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.817,42.164;60.452,42.164
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.944,46.228;60.579,46.228
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.944,45.72;60.579,45.72
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:59.944,47.371;60.579,47.371
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.6044,44.9072;62.5348,44.9072
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:62.5348,44.9072;62.738,44.7294
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.6044,43.7388;61.9252,43.7388
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.6044,38.9128;61.9252,38.9128
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.6552,37.7698;61.5442,37.7698
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:60.5028,48.1838;61.2902,48.1838
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:44.069,49.3522;40.9702,46.3042
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:41.7068,44.7294;40.2082,43.1292
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:40.2082,43.1292;43.3578,46.1264
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.212,44.7294;42.6974,42.418
+Line:: Layer:"Bottom Copper" Width:.50mm Vertices:45.2882,43.4848;43.7388,42.0116
+
+END OF FILE

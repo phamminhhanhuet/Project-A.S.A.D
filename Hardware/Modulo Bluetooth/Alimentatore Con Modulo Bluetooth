@@ -1,0 +1,604 @@
+Contents: CIRCAD Version 5.0 Data File.
+
+File Name: F:\Progetto Esami ASAD\Alimentazione\Alimentatore
+File Type: PCB
+File Date: 04/30/11
+File Time: 04:55 pm
+
+Units:: Default:1.00000" Table:25399.99983236µm,25.39999983236mm,2.539999983236cm,0.02539999983236m
+ZeroPoint:: X:0 Y:0
+Gridsnaps:: Current:.025" Index:3 Table:.001",.005",.025",.100",.025mm
+Layer:: Type:0 Screen:+AA00AA Print:+55FF55 Name:Pad Master
+Layer:: Type:4 Screen:+000000 Print:+FFFFFF Name:Symbols
+Layer:: Type:0 Screen:+000000 Print:+FFFFFF Name:Top Silk
+Layer:: Type:2 Screen:+FFFFFF Print:+000000 Name:Scritte Bianche
+Layer:: Type:10 Screen:+000000 Print:+FFFFFF Name:Piste
+Layer:: Type:3 Screen:+FFFFFF Print:+FFFFFF Name:Serigrafia
+Layer:: Type:7 Screen:+FFFFFF Print:+000000 Name:Deleted elements
+Display:: Layer:"Scritte Bianche" DrawModes:00030607 DotSpacing:.1 DotColor:FFFFFF BackgroundColor:909090 HighlightColor:FFFFFF AttentionColor:FFFF00
+Print:: Flags:47,0,24 Scaling:1 Bounds:0,0;0,0
+NetScan:: LineToLine:.008" LineToPad:.012" PadToPad:.016" RatLine:.011"
+FloodFill:: FloodToLine:.009" FloodToPad:.013" FloodLine:.011" HatchGrid:.025" TargetLayer:0
+TopIsolation:: PassCount:3 IsoTool:.010" IsoOverlap:.003" IsoClearance:.000" FloodTool:.000" FloodOverlap:.000" FloodClearance:.000" TargetLayer:15 SourceLayers:0,2,7
+BottomIsolation:: PassCount:3 IsoTool:.010" IsoOverlap:.003" IsoClearance:.000" FloodTool:.000" FloodOverlap:.000" FloodClearance:.000" TargetLayer:16 SourceLayers:0,2,8
+Library:: Name:THD.LIB
+Library:: Name:SMD.LIB
+Library:: Name:PCB.LIB
+Library:: Name:MyLibrary.LIB
+GerberOut:: MaskPadSwell:.010" StencilPadShrink:.005" PlanePadSwell:.005" PlaneHoleSwell:.030" FloodLineWidth:.002"
+GerberFile:: Type:6 Suffix:TSS Layers:2
+GerberFile:: Type:14 Suffix:BSS Layers:6
+GerberFile:: Type:2 Suffix:TSM Layers:6
+GerberFile:: Type:10 Suffix:BSM Layers:6
+GerberFile:: Type:0 Suffix:TOP Layers:3
+GerberFile:: Type:8 Suffix:BOT Layers:4
+GerberFile:: Type:4 Suffix:DRL
+GerberFile:: Type:7 Suffix:LST
+GerberFile:: Type:5 Suffix:SYM Layers:1
+DefaultLine:: Width:1.5mm Style:0
+DefaultFill::
+DefaultPad:: Type:T1 Size:2mm Hole:1.0mm Pin:1
+DefaultText:: Height:1mm Length:-1 Rotation:.25 Anchor:TR Data:Alimentatore ASAD
+DefaultVia:: Type:T3 Size:.050" Hole:.028"
+DefaultXYDimension:: Size:.096"
+DefaultComponent:: <omitted>
+
+Component:: Flags:4 Bounds:-.005,-.005;10.005,7.505 Name:"$$BOX"
+Line:: Layer:"Symbols" Width:.010" Vertices:0,0;10,0
+Line:: Layer:"Symbols" Width:.010" Vertices:10,0;10,7.5
+Line:: Layer:"Symbols" Width:.010" Vertices:10,7.5;0,7.5
+Line:: Layer:"Symbols" Width:.010" Vertices:0,7.5;0,0
+EndComp:: InsertionPoint:0,0
+Component:: Flags:4 Bounds:8.345,5.87;10.005,7.505 Name:"$$DTD"
+Line:: Layer:"Symbols" Width:.010" Vertices:8.35,7.5;10,7.5
+Line:: Layer:"Symbols" Width:.010" Vertices:10,7.5;10,5.875
+EndComp:: InsertionPoint:10,7.5
+Component:: Flags:4 Bounds:6.495,-.005;10.005,1.255 Name:"$$TTL"
+Line:: Layer:"Symbols" Width:.010" Vertices:6.5,0;6.5,1.25
+Line:: Layer:"Symbols" Width:.010" Vertices:6.5,1.25;10,1.25
+Line:: Layer:"Symbols" Width:.010" Vertices:6.5,1;10,1
+Line:: Layer:"Symbols" Width:.010" Vertices:6.5,.75;10,.75
+Line:: Layer:"Symbols" Width:.010" Vertices:10,.5;6.5,.5
+Line:: Layer:"Symbols" Width:.010" Vertices:6.5,.25;10,.25
+Line:: Layer:"Symbols" Width:.010" Vertices:6.5,0;10,0
+Line:: Layer:"Symbols" Width:.010" Vertices:10,0;10,1.25
+EndComp:: InsertionPoint:10,0
+Component:: Bounds:4.98197,5.02389;5.22197,5.11389 Name:"CD100P60" P1:"C1" P2:"330nF" P8:"Disc .100\" lead spacing"
+Text:: Layer:"Top Silk" InsertionPoint:5.27638,5.06791 Height:.036" Length:.054 Rotation:.25 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.05197,5.06889 Size:.06" Hole:.038" Pin:1
+Pad:: Type:T1 Center:5.15197,5.06889 Size:.06" Hole:.038" Pin:2
+Arc:: Layer:"Top Silk" Center:5.02697,5.06889 Radius:.04" Width:.01" Angle:90° Sweep:180°
+Arc:: Layer:"Top Silk" Center:5.17697,5.06889 Radius:.04" Width:.01" Angle:270° Sweep:180°
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.17697,5.10889;5.02697,5.10889
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.02697,5.02889;5.17697,5.02889
+EndComp:: InsertionPoint:5.05197,5.06889
+Component:: Bounds:4.98295,4.60263;5.22295,4.69263 Name:"CD100P60" P1:"C2" P2:"100nF" P8:"Disc .100\" lead spacing"
+Text:: Layer:"Top Silk" InsertionPoint:5.10295,4.70763 Height:.036" Length:.054 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.05295,4.64763 Size:.06" Hole:.038" Pin:1
+Pad:: Type:T1 Center:5.15295,4.64763 Size:.06" Hole:.038" Pin:2
+Arc:: Layer:"Top Silk" Center:5.02795,4.64763 Radius:.04" Width:.01" Angle:90° Sweep:180°
+Arc:: Layer:"Top Silk" Center:5.17795,4.64763 Radius:.04" Width:.01" Angle:270° Sweep:180°
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.17795,4.68763;5.02795,4.68763
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.02795,4.60763;5.17795,4.60763
+EndComp:: InsertionPoint:5.05295,4.64763
+Component:: Bounds:5.4741,5.44319;5.7141,5.53319 Name:"CD100P60" P1:"C3" P2:"330nF" P8:"Disc .100\" lead spacing"
+Text:: Layer:"Top Silk" InsertionPoint:5.5941,5.54819 Height:.036" Length:.054 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.5441,5.48819 Size:.06" Hole:.038" Pin:1
+Pad:: Type:T1 Center:5.6441,5.48819 Size:.06" Hole:.038" Pin:2
+Arc:: Layer:"Top Silk" Center:5.5191,5.48819 Radius:.04" Width:.01" Angle:90° Sweep:180°
+Arc:: Layer:"Top Silk" Center:5.6691,5.48819 Radius:.04" Width:.01" Angle:270° Sweep:180°
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.6691,5.52819;5.5191,5.52819
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.5191,5.44819;5.6691,5.44819
+EndComp:: InsertionPoint:5.5441,5.48819
+Component:: Bounds:4.98197,5.15775;5.22197,5.24775 Name:"CD100P60" P1:"C4" P2:"100nF" P8:"Disc .100\" lead spacing"
+Text:: Layer:"Top Silk" InsertionPoint:5.10197,5.26275 Height:.036" Length:.054 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.05197,5.20275 Size:.06" Hole:.038" Pin:1
+Pad:: Type:T1 Center:5.15197,5.20275 Size:.06" Hole:.038" Pin:2
+Arc:: Layer:"Top Silk" Center:5.02697,5.20275 Radius:.04" Width:.01" Angle:90° Sweep:180°
+Arc:: Layer:"Top Silk" Center:5.17697,5.20275 Radius:.04" Width:.01" Angle:270° Sweep:180°
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.17697,5.24275;5.02697,5.24275
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.02697,5.16275;5.17697,5.16275
+EndComp:: InsertionPoint:5.05197,5.20275
+Component:: Bounds:5.75307,5.27689;5.9505,5.45789 Rotation:90° Name:"LED" P1:"D1" P2:"LED" P8:"Light emmitting diode"
+Text:: Layer:"Top Silk" InsertionPoint:6.00807,5.38189 Height:.048" Length:.072 Rotation:.25 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.80807,5.38189 Size:.06" Hole:.038" Pin:A
+Pad:: Type:T1 Center:5.90807,5.38189 Size:.06" Hole:.038" Pin:K
+Arc:: Layer:"Top Silk" Center:5.85807,5.38189 Radius:.1" Width:.01" Angle:315° Sweep:270° Rotation:.25
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.92907,5.31089;5.92907,5.45289
+EndComp:: InsertionPoint:5.85807,5.38189
+Component:: Bounds:5.75209,5.03574;5.94952,5.21674 Rotation:90° Name:"LED" P1:"D2" P2:"LED" P8:"Light emmitting diode"
+Text:: Layer:"Top Silk" InsertionPoint:6.00709,5.14074 Height:.048" Length:.072 Rotation:.25 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.80709,5.14074 Size:.06" Hole:.038" Pin:A
+Pad:: Type:T1 Center:5.90709,5.14074 Size:.06" Hole:.038" Pin:K
+Arc:: Layer:"Top Silk" Center:5.85709,5.14074 Radius:.1" Width:.01" Angle:315° Sweep:270° Rotation:.25
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.92809,5.06974;5.92809,5.21174
+EndComp:: InsertionPoint:5.85709,5.14074
+Component:: Bounds:5.74618,4.78574;5.94361,4.96674 Rotation:90° Name:"LED" P1:"D3" P2:"LED" P8:"Light emmitting diode"
+Text:: Layer:"Top Silk" InsertionPoint:6.00118,4.89074 Height:.048" Length:.072 Rotation:.25 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.80118,4.89074 Size:.06" Hole:.038" Pin:A
+Pad:: Type:T1 Center:5.90118,4.89074 Size:.06" Hole:.038" Pin:K
+Arc:: Layer:"Top Silk" Center:5.85118,4.89074 Radius:.1" Width:.01" Angle:315° Sweep:270° Rotation:.25
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.92218,4.81974;5.92218,4.96174
+EndComp:: InsertionPoint:5.85118,4.89074
+Component:: Bounds:4.15563,4.26486;4.36563,4.46228 Name:"LED" P1:"D4" P2:"LED" P8:"Light emmitting diode"
+Text:: Layer:"Top Silk" InsertionPoint:4.26063,4.20728 Height:.048" Length:.072 Anchor:B Data:&1
+Pad:: Type:T1 Center:4.26063,4.30728 Size:.06" Hole:.038" Pin:K
+Pad:: Type:T1 Center:4.26063,4.40728 Size:.06" Hole:.038" Pin:A
+Arc:: Layer:"Top Silk" Center:4.26063,4.35728 Radius:.1" Width:.01" Angle:315° Sweep:270°
+Line:: Layer:"Top Silk" Width:.01" Vertices:4.18963,4.28628;4.33163,4.28628
+EndComp:: InsertionPoint:4.26063,4.35728
+Component:: Bounds:4.38299,4.26584;4.59299,4.46327 Name:"LED" P1:"D5" P2:"LED" P8:"Light emmitting diode"
+Text:: Layer:"Top Silk" InsertionPoint:4.48799,4.20827 Height:.048" Length:.072 Anchor:B Data:&1
+Pad:: Type:T1 Center:4.48799,4.30827 Size:.06" Hole:.038" Pin:K
+Pad:: Type:T1 Center:4.48799,4.40827 Size:.06" Hole:.038" Pin:A
+Arc:: Layer:"Top Silk" Center:4.48799,4.35827 Radius:.1" Width:.01" Angle:315° Sweep:270°
+Line:: Layer:"Top Silk" Width:.01" Vertices:4.41699,4.28727;4.55899,4.28727
+EndComp:: InsertionPoint:4.48799,4.35827
+Component:: Bounds:4.29224,3.95484;4.50224,4.06484 Name:"SIP2" P1:"P1" P2:"?" P8:"2-pin x .100\""
+Text:: Layer:"Top Silk" InsertionPoint:4.19665,4.08957 Height:.06" Length:.09 Anchor:B Data:&1
+Pad:: Type:T2 Center:4.34724,4.00984 Size:.06" Hole:.038" Pin:1
+Pad:: Type:T1 Center:4.44724,4.00984 Size:.06" Hole:.038" Pin:2
+Line:: Layer:"Top Silk" Width:.01" Vertices:4.29724,3.95984;4.49724,3.95984
+Line:: Layer:"Top Silk" Width:.01" Vertices:4.49724,3.95984;4.49724,4.05984
+Line:: Layer:"Top Silk" Width:.01" Vertices:4.49724,4.05984;4.29724,4.05984
+Line:: Layer:"Top Silk" Width:.01" Vertices:4.29724,4.05984;4.29724,3.95984
+EndComp:: InsertionPoint:4.34724,4.00984
+Component:: Bounds:5.10819,5.50405;5.41819,5.61405 Name:"SIP3" P1:"Q1" P2:"7805 FC" P8:"3-pin x .100\""
+Text:: Layer:"Top Silk" InsertionPoint:5.2498,5.40157 Height:.06" Length:.09 Anchor:B Data:&1
+Pad:: Type:T2 Center:5.16319,5.55905 Size:.06" Hole:.038" Pin:1
+Pad:: Type:T1 Center:5.26319,5.55905 Size:.06" Hole:.038" Pin:2
+Pad:: Type:T1 Center:5.36319,5.55905 Size:.06" Hole:.038" Pin:3
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.11319,5.50905;5.41319,5.50905
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.41319,5.50905;5.41319,5.60905
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.41319,5.60905;5.11319,5.60905
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.11319,5.60905;5.11319,5.50905
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.21319,5.60905;5.21319,5.50905
+EndComp:: InsertionPoint:5.16319,5.55905
+Component:: Bounds:5.16331,4.70661;5.27331,5.01661 Rotation:270° Name:"SIP3" P1:"Q2" P2:"78L33 ST" P8:"3-pin x .100\""
+Text:: Layer:"Top Silk" InsertionPoint:5.29331,4.86161 Height:.06" Length:.09 Rotation:90° Anchor:T Data:&1
+Pad:: Type:T2 Center:5.21831,4.96161 Size:.06" Hole:.038" Rotation:270° Pin:1
+Pad:: Type:T1 Center:5.21831,4.86161 Size:.06" Hole:.038" Pin:2
+Pad:: Type:T1 Center:5.21831,4.76161 Size:.06" Hole:.038" Pin:3
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.16831,5.01161;5.16831,4.71161
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.16831,4.71161;5.26831,4.71161
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.26831,4.71161;5.26831,5.01161
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.26831,5.01161;5.16831,5.01161
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.26831,4.91161;5.16831,4.91161
+EndComp:: InsertionPoint:5.21831,4.96161
+Component:: Bounds:5.32137,4.54695;5.82037,4.64595 Name:"R400P70" P1:"R1" P2:"?€" P3:"¼W" P8:"Quarter watt"
+Text:: Layer:"Top Silk" InsertionPoint:5.36201,4.67618 Height:.048" Length:.072 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.37087,4.59645 Size:.07" Hole:.038" Pin:1
+Pad:: Type:T1 Center:5.77087,4.59645 Size:.07" Hole:.038" Pin:2
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.74087,4.59645;5.71087,4.59645
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.40087,4.59645;5.43087,4.59645
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.43087,4.55645;5.71087,4.55645
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.71087,4.55645;5.71087,4.63645
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.71087,4.63645;5.43087,4.63645
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.43087,4.63645;5.43087,4.55645
+EndComp:: InsertionPoint:5.37087,4.59645
+Component:: Bounds:5.41684,4.65719;5.91584,4.75619 Name:"R400P70" P1:"R2" P2:"?€" P3:"¼W" P8:"Quarter watt"
+Text:: Layer:"Top Silk" InsertionPoint:5.66221,4.78346 Height:.048" Length:.072 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.46634,4.70669 Size:.07" Hole:.038" Pin:1
+Pad:: Type:T1 Center:5.86634,4.70669 Size:.07" Hole:.038" Pin:2
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.83634,4.70669;5.80634,4.70669
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.49634,4.70669;5.52634,4.70669
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.52634,4.66669;5.80634,4.66669
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.80634,4.66669;5.80634,4.74669
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.80634,4.74669;5.52634,4.74669
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.52634,4.74669;5.52634,4.66669
+EndComp:: InsertionPoint:5.46634,4.70669
+Component:: Bounds:5.20916,4.42687;5.70816,4.52587 Name:"R400P70" P1:"R3" P2:"?€" P3:"¼W" P8:"Quarter watt"
+Text:: Layer:"Top Silk" InsertionPoint:5.26162,4.5433 Height:.048" Length:.072 Anchor:B Data:&1
+Pad:: Type:T1 Center:5.25866,4.47637 Size:.07" Hole:.038" Pin:1
+Pad:: Type:T1 Center:5.65866,4.47637 Size:.07" Hole:.038" Pin:2
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.62866,4.47637;5.59866,4.47637
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.28866,4.47637;5.31866,4.47637
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.31866,4.43637;5.59866,4.43637
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.59866,4.43637;5.59866,4.51637
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.59866,4.51637;5.31866,4.51637
+Line:: Layer:"Top Silk" Width:.01" Vertices:5.31866,4.51637;5.31866,4.43637
+EndComp:: InsertionPoint:5.25866,4.47637
+Component:: Bounds:3.27058,3.95346;3.36958,4.45245 Rotation:270° Name:"R400P70" P1:"R4" P2:"10K€" P3:"¼W" P8:"Quarter watt"
+Text:: Layer:"Top Silk" InsertionPoint:3.40335,4.43701 Height:.048" Length:.072 Anchor:B Data:&1
+Pad:: Type:T1 Center:3.32008,4.40295 Size:.07" Hole:.038" Pin:1
+Pad:: Type:T1 Center:3.32008,4.00295 Size:.07" Hole:.038" Pin:2
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.32008,4.03295;3.32008,4.06295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.32008,4.37295;3.32008,4.34295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.28008,4.34295;3.28008,4.06295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.28008,4.06295;3.36008,4.06295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.36008,4.06295;3.36008,4.34295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.36008,4.34295;3.28008,4.34295
+EndComp:: InsertionPoint:3.32008,4.40295
+Component:: Bounds:3.42058,3.95346;3.51958,4.45245 Rotation:270° Name:"R400P70" P1:"R5" P2:"20K€" P3:"¼W" P8:"Quarter watt"
+Text:: Layer:"Top Silk" InsertionPoint:3.55591,4.43602 Height:.048" Length:.072 Anchor:B Data:&1
+Pad:: Type:T1 Center:3.47008,4.40295 Size:.07" Hole:.038" Pin:1
+Pad:: Type:T1 Center:3.47008,4.00295 Size:.07" Hole:.038" Pin:2
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.47008,4.03295;3.47008,4.06295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.47008,4.37295;3.47008,4.34295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.43008,4.34295;3.43008,4.06295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.43008,4.06295;3.51008,4.06295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.51008,4.06295;3.51008,4.34295
+Line:: Layer:"Top Silk" Width:.01" Vertices:3.51008,4.34295;3.43008,4.34295
+EndComp:: InsertionPoint:3.47008,4.40295
+Component:: Bounds:3.27492,4.5013;4.48492,5.9113 Rotation:90° Name:"RN-41" P1:"RN-1"
+Line:: Layer:"Top Silk" Width:.010" Vertices:4.47992,4.5063;4.47992,5.9063
+Line:: Layer:"Top Silk" Width:.010" Vertices:4.47992,5.9063;3.27992,5.9063
+Line:: Layer:"Top Silk" Width:.010" Vertices:4.47992,4.5063;3.27992,4.5063
+Line:: Layer:"Top Silk" Width:.010" Vertices:3.27992,4.5063;3.27992,5.9063
+Pad:: Type:T1 Center:4.32992,4.7813 Size:1.5mm Hole:.70mm Pin:1
+Pad:: Type:T1 Center:4.32992,4.8813 Size:1.5mm Hole:.70mm Pin:2
+Pad:: Type:T1 Center:4.32992,4.9813 Size:1.5mm Hole:.70mm Pin:3
+Pad:: Type:T1 Center:4.32992,5.0813 Size:1.5mm Hole:.70mm Pin:4
+Pad:: Type:T1 Center:4.32992,5.1813 Size:1.5mm Hole:.70mm Pin:5
+Pad:: Type:T1 Center:4.32992,5.2813 Size:1.5mm Hole:.70mm Pin:6
+Pad:: Type:T1 Center:4.32992,5.3813 Size:1.5mm Hole:.70mm Pin:7
+Pad:: Type:T1 Center:4.32992,5.4813 Size:1.5mm Hole:.70mm Pin:8
+Pad:: Type:T1 Center:4.32992,5.5813 Size:1.5mm Hole:.70mm Pin:9
+Pad:: Type:T1 Center:4.32992,5.6813 Size:1.5mm Hole:.70mm Pin:10
+Pad:: Type:T1 Center:3.42992,5.6813 Size:1.5mm Hole:.70mm Pin:11
+Pad:: Type:T1 Center:3.42992,5.5813 Size:1.5mm Hole:.70mm Pin:12
+Pad:: Type:T1 Center:3.42992,5.4813 Size:1.5mm Hole:.70mm Pin:13
+Pad:: Type:T1 Center:3.42992,5.3813 Size:1.5mm Hole:.70mm Pin:14
+Pad:: Type:T1 Center:3.42992,5.2813 Size:1.5mm Hole:.70mm Pin:15
+Pad:: Type:T1 Center:3.42992,5.1813 Size:1.5mm Hole:.70mm Pin:16
+Pad:: Type:T1 Center:3.42992,5.0813 Size:1.5mm Hole:.70mm Pin:17
+Pad:: Type:T1 Center:3.42992,4.9813 Size:1.5mm Hole:.70mm Pin:18
+Pad:: Type:T1 Center:3.42992,4.8813 Size:1.5mm Hole:.70mm Pin:19
+Pad:: Type:T1 Center:3.42992,4.7813 Size:1.5mm Hole:.70mm Pin:20
+Text:: Layer:"Top Silk" InsertionPoint:3.98898,4.06398 Height:.050" Length:.20833 Anchor:TR Data:RN-41
+EndComp:: InsertionPoint:4.55492,5.9813
+Pad:: Type:T1 Center:6.12087,5.75984 Size:3mm Hole:1.5mm Pin:12
+Pad:: Type:T1 Center:6.11988,5.562 Size:3mm Hole:1.5mm Pin:GND
+Pad:: Type:T1 Center:5.775,4.075 Size:3mm Hole:1.5mm Pin:GND
+Pad:: Type:T1 Center:5.575,4.075 Size:3mm Hole:1.5mm Pin:12
+Pad:: Type:T1 Center:5.375,4.075 Size:3mm Hole:1.5mm Pin:5
+Pad:: Type:T1 Center:5.15,4.075 Size:3mm Hole:1.5mm Pin:3.3
+Line:: Layer:"Piste" Width:2mm Vertices:5.75965,4.18897;5.94173,4.18897
+Line:: Layer:"Piste" Width:2mm Vertices:5.55295,4.69193;5.55295,4.1811
+Pad:: Type:T1 Center:5.79705,5.81102 Size:2mm Hole:1.0mm Pin:1
+Pad:: Type:T1 Center:5.51457,5.32283 Size:2mm Hole:1.0mm Pin:2
+Line:: Layer:"Piste" Width:2mm Vertices:5.36299,4.19094;5.36299,5.55708
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.16319,5.55905;5.16319,5.65945
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.16319,5.65945;5.38071,5.65945
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.38071,5.65945;5.45551,5.58464
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.04508,5.76181;5.04508,4.87303
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.2626,5.56004;5.2626,5.47736
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.2626,5.47736;5.05591,5.47736
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.15236,5.06889;5.18189,5.06889
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.15138,4.64665;5.18189,4.73425
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.04508,4.8809;5.04508,4.64665
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.04508,4.64665;5.06083,4.64665
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.06083,4.64665;5.06083,5.75787
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.1504,4.64763;5.1504,4.21358
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.15138,5.06988;5.15138,5.20275
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.15138,5.20275;5.37087,5.20275
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.37087,5.20275;5.15138,5.20275
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.15138,5.20275;5.15138,5.06594
+Fill:: Layer:"Piste" Bounds:5.15138,4.92323;5.35217,5.20078 Vertices:5.15532,5.20078;5.35217,5.20078;5.34429,4.92323;5.27047,4.92421;5.19075,4.93208;5.16516,5.05708;5.15138,5.07185
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.2626,5.48523;5.2626,5.2933
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.2626,5.2933;5.05197,5.2933
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.30689,5.18405;5.37284,5.25
+Fill:: Layer:"Piste" Bounds:5.04803,5.28838;5.25571,5.47637 Vertices:5.04803,5.47637;5.25571,5.46063;5.25079,5.28838;5.06772,5.29429
+Line:: Layer:"Piste" Width:2mm Vertices:5.55295,4.62204;5.55295,5.30413
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.26457,4.47637;5.18583,4.47637
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.26555,4.47637;5.18484,4.55708
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.18484,4.55708;5.26654,4.47539
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.26654,4.47539;5.17303,4.38189
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.26555,4.47441;5.26555,4.30118
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.26555,4.30118;5.16811,4.20374
+Line:: Layer:"Piste" Width:2mm Vertices:6.01555,4.18897;5.79508,4.18897
+Line:: Layer:"Piste" Width:2mm Vertices:6.12087,5.87008;6.12087,5.75098
+Line:: Layer:"Piste" Width:2mm Vertices:6.11988,5.87204;5.76457,5.87204
+Line:: Layer:"Piste" Width:2mm Vertices:5.76457,5.87204;5.76457,5.75295
+Line:: Layer:"Piste" Width:2mm Vertices:5.76457,5.75295;6.12579,5.75295
+Line:: Layer:"Piste" Width:2mm Vertices:5.79508,5.81988;6.09331,5.81988
+Line:: Layer:"Piste" Width:2mm Vertices:5.47028,4.70669;5.47028,5.29429
+Line:: Layer:"Piste" Width:2mm Vertices:5.47028,5.29429;5.47028,4.35925
+Line:: Layer:"Piste" Width:2mm Vertices:5.47028,4.35925;5.47028,4.32775
+Line:: Layer:"Piste" Width:2mm Vertices:5.47028,4.32775;5.47028,4.30118
+Line:: Layer:"Piste" Width:2mm Vertices:5.47028,4.30118;5.55197,4.21948
+Line:: Layer:"Piste" Width:2mm Vertices:5.51851,4.30708;5.51851,5.25295
+Line:: Layer:"Piste" Width:2mm Vertices:5.3689,4.59744;5.3689,4.19193
+Line:: Layer:"Piste" Width:2mm Vertices:5.3689,4.19193;5.3689,5.5561
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.46043,5.28543;5.46043,5.57874
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.5628,5.24311;5.5628,5.34645
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.5628,5.34645;5.49882,5.34645
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.49882,5.34645;5.52146,5.32382
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.52146,5.32382;5.52146,5.29134
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.51162,5.34645;5.47914,5.34645
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.50965,5.33267;5.46437,5.37795
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.16713,5.64468;5.39449,5.64468
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.55886,5.62992;5.41713,5.77165
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.41713,5.77165;5.04606,5.77165
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.04508,5.74212;5.04508,5.77165
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.38858,5.77165;5.55295,5.77165
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.55886,5.77165;5.52441,5.77165
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.48012,5.74704;5.53622,5.74704
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.53622,5.74704;5.53622,5.70374
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.11988,5.77165;5.06083,5.7126
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.29016,4.94783;5.37776,4.86023
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.1376,5.44389;5.04705,5.53445
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.65925,4.47637;5.63957,4.47637
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.38563,5.87598;5.42205,5.87598
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.56083,5.77165;5.56083,5.87598
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.56083,5.87598;5.04705,5.87598
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.56083,5.78149;5.56083,5.62992
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.04508,5.75787;5.04508,5.87598
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.05886,5.82185;5.52441,5.82185
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.4378,5.75197;5.07756,5.75197
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.07165,5.73326;5.07165,5.48425
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.12973,5.76574;5.0687,5.70472
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.45551,5.58464;5.5628,5.47736
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.5628,5.47736;5.5628,5.30807
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.51752,5.34547;5.51752,5.46555
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.51752,5.46555;5.48602,5.49704
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.63858,4.47539;5.63858,5.38386
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.63858,5.38386;5.80788,5.38386
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.77244,4.59645;5.71339,4.59645
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.56083,5.62992;6.04606,5.62992
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.04606,5.62992;6.11988,5.5561
+Line:: Layer:"Piste" Width:2mm Vertices:5.76654,5.87204;5.66319,5.87204
+Line:: Layer:"Piste" Width:2mm Vertices:5.66319,5.87204;5.66319,5.75689
+Line:: Layer:"Piste" Width:2mm Vertices:5.66319,5.75689;5.79902,5.75689
+Line:: Layer:"Piste" Width:2mm Vertices:5.79902,5.75295;5.66319,5.75295
+Line:: Layer:"Piste" Width:2mm Vertices:6.11693,5.562;6.11693,4.18897
+Line:: Layer:"Piste" Width:2mm Vertices:6.11693,4.18897;5.9752,4.18897
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.7124,4.59645;5.7124,5.14074
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.7124,5.14074;5.80788,5.14074
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.80099,4.89074;5.80099,4.70669
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.80099,4.70669;5.86791,4.70669
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.90138,4.89074;5.90138,5.62893
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.90138,4.90649;5.90138,4.82382
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.90138,4.82382;5.9811,4.74409
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.9811,4.74409;6.12579,4.74409
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.80886,5.38386;5.80886,5.24311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.80886,5.24311;5.64941,5.24311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.80788,5.13976;5.80788,4.98326
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.80788,4.98326;5.71339,4.98326
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.68484,5.24606;5.64055,5.20177
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.75276,4.98819;5.71339,4.94882
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.87185,4.70669;5.80099,4.77756
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.77638,4.59645;5.71339,4.65945
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.66516,4.47736;5.63858,4.50393
+Fill:: Layer:"Piste" Bounds:5.90532,4.74508;6.12579,5.63582 Vertices:6.12579,4.74508;5.98504,4.74606;5.90532,4.81988;5.90925,5.62697;6.04606,5.63582;6.11693,5.5561;6.12579,5.53248
+Fill:: Layer:"Piste" Bounds:5.66713,5.75787;5.76063,5.87893 Vertices:5.67697,5.8248;5.67599,5.87893;5.74784,5.85137;5.76063,5.76082;5.71634,5.75787;5.66713,5.76378
+Fill:: Layer:"Piste" Bounds:5.63465,5.23425;5.82165,5.39862 Vertices:5.64351,5.31594;5.64351,5.39862;5.82165,5.37893;5.8187,5.23425;5.63465,5.23523
+Fill:: Layer:"Piste" Bounds:5.7065,4.98326;5.81378,5.1624 Vertices:5.7124,4.98326;5.7065,5.1624;5.81378,5.13976;5.80394,4.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.55394,5.63484;5.64055,5.54823
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.64055,5.54823;5.64055,5.47834
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.64055,5.47834;5.8876,5.47834
+Fill:: Layer:"Piste" Bounds:5.58445,5.4685;5.93189,5.62893 Vertices:5.58445,5.62893;5.93189,5.62106;5.91122,5.4685;5.64547,5.48031;5.63957,5.54527
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.72618,4.19094;5.72618,4.37106
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.72618,4.37106;5.72618,4.40649
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.72618,4.40649;5.98012,4.66043
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.98012,4.66043;5.98012,4.7933
+Fill:: Layer:"Piste" Bounds:5.72126,4.19193;6.11299,4.75787 Vertices:5.72421,4.1998;5.72126,4.39862;5.97323,4.66338;5.9752,4.75787;6.11299,4.75393;6.10906,4.19193
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.63071,5.6122;5.52441,5.7185
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.84134,5.49606;5.92894,5.40846
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.96437,4.77854;5.96437,4.62893
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.05099,5.23228;5.14055,5.32185
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.21732,5.48523;5.2626,5.53051
+Text:: Layer:"Serigrafia" InsertionPoint:6.06083,5.3622 Height:1.5mm Length:.1378 Rotation:.25 Anchor:TR Data:12V
+Text:: Layer:"Serigrafia" InsertionPoint:6.0628,5.18208 Height:1.5mm Length:.15748 Rotation:.25 Anchor:TR Data:GND
+Text:: Layer:"Serigrafia" InsertionPoint:6.02933,4.34586 Height:1mm Length:.09843 Rotation:.25 Anchor:TR Data:Gnd
+Text:: Layer:"Serigrafia" InsertionPoint:5.95256,4.34291 Height:1mm Length:.09186 Rotation:.25 Anchor:TR Data:12V
+Text:: Layer:"Serigrafia" InsertionPoint:5.87973,4.34094 Height:1mm Length:.05906 Rotation:.25 Anchor:TR Data:5V
+Text:: Layer:"Serigrafia" InsertionPoint:5.80689,4.34094 Height:1mm Length:.11155 Rotation:.25 Anchor:TR Data:3,3V
+Text:: Layer:"Scritte Bianche" InsertionPoint:6.025,4.825 Height:1mm Length:-.59711 Rotation:.25 Anchor:TR Data:Alimentatore ASAD
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.04705,4.54823;5.18878,4.54823
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.18878,4.54823;5.04606,4.54823
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.04606,4.54823;5.04606,4.19291
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.04606,4.19291;5.16614,4.19291
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.09528,4.52559;5.09528,4.22637
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.30295,4.94193;5.15236,4.94193
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.15236,4.94193;5.15236,5.1378
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.15138,5.07283;5.15138,4.94193
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.21929,4.86122;5.05886,4.86122
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.05689,4.91437;5.11004,4.86122
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.11004,4.86122;5.03622,4.7874
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.15039,4.63287;5.15039,4.7628
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.26555,4.40256;5.26555,4.7628
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.26555,4.7628;5.15039,4.7628
+Fill:: Layer:"Piste" Bounds:5.10118,4.2126;5.27343,4.76378 Vertices:5.10118,4.2126;5.19665,4.22244;5.27343,4.31496;5.26752,4.76083;5.16614,4.76378
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.76358,5.87697;5.73504,5.84843
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.73504,5.84843;5.73504,5.77362
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.73504,5.77362;5.76161,5.74705
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.76161,5.74705;5.83051,5.74705
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.83051,5.74705;5.85512,5.77165
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.85512,5.77165;5.85512,5.84843
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.85512,5.84843;5.82657,5.87697
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.82657,5.87697;5.76358,5.87697
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.54311,5.38189;5.4811,5.38189
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.4811,5.38189;5.45354,5.35433
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.45354,5.35433;5.45354,5.29331
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.45354,5.29331;5.48701,5.25984
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.48701,5.25984;5.54016,5.25984
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.54311,5.38189;5.55,5.38189
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.55,5.38189;5.57559,5.3563
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.57559,5.3563;5.57559,5.28839
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.57559,5.28839;5.54705,5.25984
+Line:: Layer:"Serigrafia" Width:.3mm Vertices:5.54705,5.25984;5.52835,5.25984
+Text:: Layer:"Serigrafia" InsertionPoint:5.77835,5.71063 Height:1mm Length:.02625 Rotation:.25 Anchor:TR Data:P
+Text:: Layer:"Serigrafia" InsertionPoint:5.50079,5.2185 Height:1mm Length:.02625 Rotation:.25 Anchor:TR Data:P
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.12185,5.72933;5.6622,5.72933
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.65335,5.82382;5.65335,5.73031
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.68287,5.72933;5.65335,5.72933
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.15039,5.76083;6.15039,5.87598
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.11791,5.88189;6.15039,5.88189
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.13465,5.88189;5.6622,5.88189
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.06772,5.72933;6.14547,5.72933
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.15039,5.79429;6.15039,5.72933
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.04114,5.62992;6.11496,5.62992
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.15138,5.62992;6.06378,5.62992
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.15138,5.62992;6.15138,4.19488
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.06969,4.17913;6.14843,4.17913
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.15138,4.20276;6.15138,4.17913
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.42992,5.6811;3.3187,5.6811
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.3187,4.39862;3.47028,4.39862
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.43091,5.57972;3.32559,5.57972
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.36398,5.6811;3.22421,5.6811
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.22421,5.6811;3.22421,4.40157
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.22421,4.40157;3.46536,4.40157
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.32165,4.00197;3.13071,4.00197
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.13071,4.00197;3.13071,5.78051
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.13071,5.78051;3.53524,5.78051
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.53524,5.78051;3.53524,5.38484
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.53524,5.38484;3.42402,5.38484
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.32953,5.68405;3.54803,5.68405
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.32461,4.53248;3.47224,4.53248
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.47224,4.53248;3.5313,4.53248
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.5313,4.53248;3.61594,4.44783
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.61594,4.44783;3.61594,4.0935
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.61594,4.0935;4.44665,4.0935
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.44665,4.0935;4.44665,4.00886
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.32461,5.57972;3.32461,4.53248
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.48701,4.40748;4.48701,4.52854
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.48701,4.52854;4.25866,4.52854
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.25866,4.52854;3.5126,5.27461
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.5126,5.27461;3.425,5.27461
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.42894,5.1811;3.45354,5.1811
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.45354,5.1811;4.22815,4.4065
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.22815,4.4065;4.26555,4.4065
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.26063,4.30807;4.48898,4.30807
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.48898,4.30807;4.52244,4.30807
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.52244,4.30807;4.58248,4.36811
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,4.36811;4.58248,4.53642
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,4.53642;4.58248,4.57283
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,4.57283;4.51063,4.64469
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.51063,4.64469;4.30492,4.64469
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.30492,4.64469;3.5372,5.4124
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.50965,5.38484;3.56476,5.38484
+Line:: Layer:"Piste" Width:2mm Vertices:3.31772,4.00394;3.31772,4.25
+Line:: Layer:"Piste" Width:2mm Vertices:3.31772,4.25;3.13957,4.25
+Line:: Layer:"Piste" Width:2mm Vertices:3.46929,4.40354;3.23307,4.40354
+Line:: Layer:"Piste" Width:2mm Vertices:3.22421,4.52756;3.22421,4.40453
+Line:: Layer:"Piste" Width:2mm Vertices:3.22421,4.40453;3.22421,5.67224
+Line:: Layer:"Piste" Width:2mm Vertices:3.42795,5.6811;3.22421,5.6811
+Line:: Layer:"Piste" Width:2mm Vertices:3.22421,5.6811;3.22421,5.65059
+Line:: Layer:"Piste" Width:2mm Vertices:3.46929,4.00295;4.34823,4.00295
+Line:: Layer:"Piste" Width:2mm Vertices:4.32559,5.87008;3.16417,5.87008
+Line:: Layer:"Piste" Width:2mm Vertices:3.14055,5.82283;3.14055,5.87008
+Line:: Layer:"Piste" Width:2mm Vertices:3.14055,5.87008;3.21043,5.87008
+Line:: Layer:"Piste" Width:2mm Vertices:3.14055,5.83366;3.14055,5.78543
+Line:: Layer:"Piste" Width:2mm Vertices:4.21535,5.87008;4.33051,5.87008
+Line:: Layer:"Piste" Width:2mm Vertices:4.33051,5.87008;4.33051,5.68799
+Line:: Layer:"Piste" Width:2mm Vertices:4.33051,5.68799;3.54508,5.68799
+Line:: Layer:"Piste" Width:2mm Vertices:4.24291,5.68799;4.19764,5.64272
+Line:: Layer:"Piste" Width:2mm Vertices:4.19764,5.64272;4.19764,4.76673
+Line:: Layer:"Piste" Width:2mm Vertices:4.19764,4.79823;4.19764,4.76575
+Fill:: Layer:"Piste" Bounds:3.14941,4.75886;4.33445,5.8622 Vertices:3.14941,5.78543;3.15335,5.8622;4.32264,5.85827;4.33445,5.70374;4.22028,5.67913;4.19173,4.75886;3.53622,5.4065;3.53228,5.7687
+Line:: Layer:"Piste" Width:2mm Vertices:3.59823,5.18701;3.50374,5.2815
+Line:: Layer:"Piste" Width:2mm Vertices:3.50374,5.2815;3.42795,5.2815
+Line:: Layer:"Piste" Width:2mm Vertices:3.42795,5.2815;3.50374,5.2815
+Line:: Layer:"Piste" Width:2mm Vertices:3.50374,5.2815;4.25571,4.52953
+Line:: Layer:"Piste" Width:2mm Vertices:4.25571,4.52953;4.48602,4.52953
+Line:: Layer:"Piste" Width:2mm Vertices:4.48602,4.52953;4.48602,4.41535
+Fill:: Layer:"Piste" Bounds:3.12874,4.00492;3.34528,4.25295 Vertices:3.13563,4.24705;3.12874,4.01772;3.34528,4.00492;3.32657,4.25295
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.47913,4.40354;3.47913,4.35925
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.47913,4.35925;3.24291,4.35925
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.21437,4.41339;3.21437,4.36614
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.2626,4.35925;3.21437,4.35925
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.21437,4.35925;3.21437,5.68209
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.17894,4.24705;3.13071,4.29528
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.18386,5.79035;3.13071,5.7372
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.54803,5.72343;3.48701,5.78445
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.53819,5.44094;3.48209,5.38484
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.20748,4.7874;4.20748,4.74508
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.19862,4.43602;4.26063,4.43602
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.26063,4.43602;4.26063,4.4065
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.26063,4.4065;4.27146,4.4065
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.27146,4.4065;4.27146,4.43602
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.27146,4.43602;4.20846,4.43602
+Line:: Layer:"Piste" Width:2mm Vertices:3.42894,5.18209;3.42894,5.1811
+Line:: Layer:"Piste" Width:2mm Vertices:3.42894,5.38189;3.42894,5.38386
+Line:: Layer:"Piste" Width:2mm Vertices:3.42795,5.58071;3.42992,5.58071
+Line:: Layer:"Piste" Width:2mm Vertices:4.33051,5.57972;4.3315,5.57972
+Line:: Layer:"Piste" Width:2mm Vertices:4.25965,4.30709;4.26063,4.30709
+Line:: Layer:"Piste" Width:2mm Vertices:4.48701,4.30906;4.48799,4.30906
+Line:: Layer:"Piste" Width:2mm Vertices:3.31673,3.99803;3.14055,3.99803
+Line:: Layer:"Piste" Width:2mm Vertices:3.14055,3.99803;3.14055,4.06791
+Line:: Layer:"Piste" Width:2mm Vertices:4.44862,4.01083;4.44862,4.01181
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.54803,5.08661;3.54803,4.6565
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.54803,4.6565;3.74488,4.45965
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.24685,4.4065;3.85709,4.4065
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.72618,4.47835;3.79803,4.4065
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.79803,4.4065;3.94862,4.4065
+Fill:: Layer:"Piste" Bounds:3.54114,4.40945;4.22717,5.05217 Vertices:3.54213,5.05217;4.22717,4.42224;3.80689,4.40945;3.54114,4.67126
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.58543,4.47835;3.97028,4.0935
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.90728,4.32185;3.74193,4.32185
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.74193,4.32185;4.13465,4.32185
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.13465,4.32185;4.13465,4.25
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.13465,4.25;4.29016,4.09449
+Fill:: Layer:"Piste" Bounds:3.61398,4.09744;4.2872,4.41831 Vertices:3.61398,4.09744;3.61398,4.41831;3.77146,4.3189;4.13366,4.31299;4.13957,4.24508;4.2872,4.10335
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.25079,4.30709;4.25079,4.2815
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.25079,4.2815;4.34331,4.18898
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.34331,4.18898;4.55591,4.18898
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,4.40945;4.58248,4.18898
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,4.18898;4.52736,4.18898
+Fill:: Layer:"Piste" Bounds:4.26063,4.18996;4.60217,4.30906 Vertices:4.26063,4.30906;4.60217,4.3061;4.58051,4.18996;4.3315,4.20768
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.45945,4.00591;3.45945,4.25886
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.45945,4.25886;3.50965,4.25886
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.50965,4.25886;3.50965,4.06988
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.50965,4.06988;3.50965,4.01476
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.57264,4.00197;3.47815,4.09646
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,4.54724;4.58248,5.4813
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,5.4813;4.43976,5.4813
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.43976,5.4813;4.43976,4.64469
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.4378,5.68799;4.4378,5.87008
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,5.68799;4.58248,5.86811
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.25669,5.67815;4.58248,5.67815
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,5.67815;4.58248,5.86811
+Line:: Layer:"Piste" Width:1.5mm Vertices:3.19272,5.87992;4.58248,5.87992
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.58248,5.87992;4.58248,5.82972
+Fill:: Layer:"Piste" Bounds:4.29213,5.67717;4.59429,5.89272 Vertices:4.58346,5.68209;4.29213,5.67717;4.32362,5.89272;4.59429,5.87303
+Fill:: Layer:"Piste" Bounds:4.4378,4.60531;4.58346,5.47638 Vertices:4.56673,4.60531;4.4378,4.66043;4.44272,5.47539;4.57756,5.47638;4.58346,4.6939
+Text:: Layer:"Serigrafia" InsertionPoint:4.3,4.1 Height:1mm Length:.06562 Data:RX
+Text:: Layer:"Serigrafia" InsertionPoint:4.425,4.1 Height:1mm Length:.06562 Data:TX
+Text:: Layer:"Scritte Bianche" InsertionPoint:4.1563,5.80709 Height:1mm Length:-.55774 Data:Modulo Bluetooth
+Text:: Layer:"Scritte Bianche" InsertionPoint:3.94173,5.70669 Height:1mm Length:-.16404 Data:RN-41
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.33051,5.58169;4.67598,5.58169
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.67598,5.58169;4.67598,4.21358
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.08051,4.19291;4.67598,4.19291
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.67598,4.19291;4.67598,4.29134
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.13071,5.87598;4.53917,5.87598
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.54803,5.87992;5.56083,5.87992
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.64154,5.875;4.56673,5.8002
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.97913,5.87402;5.05984,5.79331
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.05197,4.54823;4.68091,4.54823
+Fill:: Layer:"Piste" Bounds:4.67303,4.19094;5.06772,4.53642 Vertices:4.67992,4.19094;4.67303,4.53642;5.06772,4.52362;5.05197,4.19094
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.76457,4.53346;4.67697,4.62106
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.67598,4.20472;4.67598,4.01969
+Line:: Layer:"Piste" Width:1.5mm Vertices:4.67598,3.99311;4.67598,4.12795
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.19469,4.24508;5.19469,3.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.19469,3.99311;4.67598,3.99311
+Fill:: Layer:"Piste" Bounds:4.66614,3.99016;5.18386,4.25098 Vertices:5.18386,4.00098;5.17106,4.25098;4.66614,4.19193;4.68189,3.99016
+Line:: Layer:"Piste" Width:2mm Vertices:5.36299,4.32579;5.36299,4.24213
+Line:: Layer:"Piste" Width:2mm Vertices:5.36299,4.24213;5.3128,4.19193
+Line:: Layer:"Piste" Width:2mm Vertices:5.3128,4.19193;5.3128,4.02461
+Line:: Layer:"Piste" Width:2mm Vertices:5.3689,4.27657;5.3689,4.24705
+Line:: Layer:"Piste" Width:2mm Vertices:5.3689,4.24705;5.3689,4.23228
+Line:: Layer:"Piste" Width:2mm Vertices:5.3689,4.23228;5.42008,4.1811
+Line:: Layer:"Piste" Width:2mm Vertices:5.42008,4.1811;5.42008,4.04331
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.31181,3.99311;5.31181,4.02165
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.31181,4.02165;5.31181,3.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.31181,3.99311;5.42008,3.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.42992,4.06004;5.42992,3.99409
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.40728,3.99311;5.42992,3.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.30295,4.04035;5.30295,3.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.33051,3.99311;5.30295,3.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.37087,4.02854;5.37087,4.23031
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.52736,4.23031;5.52736,3.99409
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.52933,3.99311;5.52736,3.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.55591,4.40453;5.60413,4.3563
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.60413,4.3563;5.60413,3.99409
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.60413,3.99409;5.52736,3.99409
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.52736,3.99311;5.60413,3.99311
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.56575,4.01673;5.56575,4.25886
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.72618,4.28642;5.72618,3.99409
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.72618,3.99114;5.72618,4.00787
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.15138,4.19291;6.15138,3.99213
+Line:: Layer:"Piste" Width:1.5mm Vertices:6.15138,3.99213;5.72717,3.99213
+Line:: Layer:"Piste" Width:1.5mm Vertices:5.72618,3.99114;6.15138,3.99114
+Fill:: Layer:"Piste" Bounds:5.73406,3.99902;6.16614,4.24902 Vertices:5.73406,4;5.77736,4.24902;6.16614,4.18406;6.15433,3.99902
+
+END OF FILE

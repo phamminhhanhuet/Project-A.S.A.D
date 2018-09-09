@@ -1,0 +1,6 @@
+Control (6) 1
+Enable (7) 1
+Reset (1) 1
+Full (2) 0
+Clock (3) lo diamo con un for next,poi vediamo
+Verso(4) lo dobbiamo dare noi

@@ -1,0 +1,24 @@
+0	1	mBPic.exe -DBG -pP16F877A -MSF -Y -DL -O11111114 -fo4 -N"G:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\Programma Pic ASAD.mbppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroBasic PRO for PIC\Uses\P16\" -SP"G:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\" -SP"F:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\" -SP"C:\Programmi\Mikroelektronika\mikroBasic PRO for PIC\defs\" -SP"C:\Programmi\Mikroelektronika\mikroBasic PRO for PIC\Uses\P16\" -SP"E:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\" -SP"D:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\" -SP"D:\Progetto Esami ASAD\Programma Pic ASAD\" -SP"F:\Progetto Esami ASAD\Programma Pic ASAD\" -SP"C:\Program Files\Mikroelektronika\mikroBasic PRO for PIC\defs\" -SP"C:\Program Files\Mikroelektronika\mikroBasic PRO for PIC\uses\P18\" -SP"C:\Users\giannotta\Desktop\Programma Pic ASAD\" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_String.mcl" "__Lib_Conversions.mcl" "__Lib_Time.mcl" "__Lib_Trigon.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_A_C.mcl" "__Lib_EEPROM.mcl" "__Lib_FLASH_RW.mcl" "__Lib_I2C_c34.mcl" "__Lib_PWM_c21.mcl" "__Lib_SPI_c345.mcl" "__Lib_UART_c67.mcl" "__Lib_PortExpander.mcl" "__Lib_CANSPI.mcl" "__Lib_CF.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_RS485.mcl" "__Lib_T6963C.mcl" "__Lib_SPIGlcd.mcl" "__Lib_SPILcd.mcl" "__Lib_SPILcd8.mcl" "__Lib_SPIT6963C.mcl" "__Lib_EthEnc28j60.mcl" "Programma Pic ASAD.mbas"	 
+warning: 0	1501	Specified search path does not exist: 'F:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Programmi\Mikroelektronika\mikroBasic PRO for PIC\defs'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Programmi\Mikroelektronika\mikroBasic PRO for PIC\Uses\P16'	 
+warning: 0	1501	Specified search path does not exist: 'E:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione'	 
+warning: 0	1501	Specified search path does not exist: 'D:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione'	 
+warning: 0	1501	Specified search path does not exist: 'D:\Progetto Esami ASAD\Programma Pic ASAD'	 
+warning: 0	1501	Specified search path does not exist: 'F:\Progetto Esami ASAD\Programma Pic ASAD'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Program Files\Mikroelektronika\mikroBasic PRO for PIC\defs'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Program Files\Mikroelektronika\mikroBasic PRO for PIC\uses\P18'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Users\giannotta\Desktop\Programma Pic ASAD'	 
+diagnostics: 0	155	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	133	Compilation Started	G:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\Programma Pic ASAD.mbas
+hint: 1	1015	Hint: Compiling unit "G:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\Programma Pic ASAD.mbas"	Programma Pic ASAD.mbas
+hint: 171	1006	Warning: Generated baud rate is 125000 bps (error = 8.51 percent)	Programma Pic ASAD.mbas
+hint: 230	1010	Hint: Unit "Programma Pic ASAD.mbas" has been recompiled	Programma Pic ASAD.mbas
+diagnostics: 0	134	Compiled Successfully	G:\Progetto Esami ASAD\Microcontrollore\Programma Pic ASAD\Main & Compilazione\Programma Pic ASAD.mbas
+diagnostics: 0	139	All files Compiled in 1031 ms	 
+hint: 0	1144	Used RAM (bytes): 14 (4%)  Free RAM (bytes): 338 (96%)	Used RAM (bytes): 14 (4%)  Free RAM (bytes): 338 (96%)
+hint: 0	1144	Used ROM (program words): 629 (8%)  Free ROM (program words): 7563 (92%)	Used ROM (program words): 629 (8%)  Free ROM (program words): 7563 (92%)
+diagnostics: 0	145	Project Linked Successfully	Programma Pic ASAD.mbppi
+diagnostics: 0	140	Linked in 1812 ms	 
+diagnostics: 0	141	Project 'Programma Pic ASAD.mbppi' completed: 3109 ms	 
+diagnostics: 0	103	Finished successfully: 30 giu 2011, 21.12.41	Programma Pic ASAD.mbppi

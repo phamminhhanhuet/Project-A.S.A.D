@@ -1,0 +1,43 @@
+'Sub Procedure
+Sub Procedure Destra () 'Destra
+    PortC.0 = 1 'Porta Dedita alla Enable
+    PortC.7 = 1 'Porta Dedita a C (SX)
+    PortC.6 = 0 'Porta Dedita a D (SX)
+    PortC.5 = 1 'Porta Dedita a C (DX)
+    PortC.4 = 0 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure Sinistra () 'Sinistra
+    PortC.0 = 1 'Porta Dedita alla Enable
+    PortC.7 = 0 'Porta Dedita a C (SX)
+    PortC.6 = 1 'Porta Dedita a D (SX)
+    PortC.5 = 0 'Porta Dedita a C (DX)
+    PortC.4 = 1 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure Avanti () 'Avanti
+    PortC.0 = 1 'Porta Dedita alla Enable
+    PortC.7 = 1 'Porta Dedita a C (SX)
+    PortC.6 = 0 'Porta Dedita a D (SX)
+    PortC.5 = 0 'Porta Dedita a C (DX)
+    PortC.4 = 1 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure Indietro () 'Indietro
+    PortC.0 = 1 'Porta Dedita alla Enable
+    PortC.7 = 0 'Porta Dedita a C (SX)
+    PortC.6 = 1 'Porta Dedita a D (SX)
+    PortC.5 = 1 'Porta Dedita a C (DX)
+    PortC.4 = 0 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure FRMS () 'Free Running Motor Stop
+    PortC.0 = 0 'Porta Dedita alla Enable
+    PortC.7 = 0 'Porta Dedita a C (SX)
+    PortC.6 = 0 'Porta Dedita a D (SX)
+    PortC.5 = 0 'Porta Dedita a C (DX)
+    PortC.4 = 0 'Porta Dedita a D (DX)
+End Sub
+Sub Procedure FMS () 'Fast Motor Stop
+    PortC.0 = 1 'Porta Dedita alla Enable
+    PortC.7 = 1 'Porta Dedita a C (SX)
+    PortC.6 = 1 'Porta Dedita a D (SX)
+    PortC.5 = 1 'Porta Dedita a C (DX)
+    PortC.4 = 1 'Porta Dedita a D (DX)
+End Sub
