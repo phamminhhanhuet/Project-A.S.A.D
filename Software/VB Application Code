@@ -1,0 +1,164 @@
+'Variabili
+Dim Ctrl As Boolean 'Controllo Collegamento
+Private Sub Form_Load() 'Generale Form & Telecamera Visualizzazione
+'Dim f
+'For f = 0 To vcx.GetVideoDeviceCount - 1
+  '  Combo2.AddItem vcx.GetVideoDeviceName(f)
+'Next f
+'Combo2.ListIndex = 0
+End Sub
+Private Sub Combo2_Click() 'Telecamera Scelta Driver
+If vcx.Connected = True Then vcx.Connected = False 'verifica se la telecamera Ë connessa
+vcx.VideoDeviceIndex = Combo2.ListIndex
+vcx.Connected = True
+vcx.Preview = True
+End Sub
+Private Sub Manuale_Click() 'Modalita‡ Manuale
+If Ctrl = True Then
+    MSComm1.Output = "3"  
+    A.Enabled = True
+    I.Enabled = True
+    DX.Enabled = True
+    SX.Enabled = True
+    Rilascia.Enabled = True
+    Cattura.Enabled = True
+    Ferma.Enabled = True
+Else
+    MsgBox "Non sei connesso", _
+    vbInformation, _
+    "Controllo COM"
+End If
+End Sub
+Private Sub Stop_Click()
+If Ctrl = True Then
+    MSComm1.Output = "0"
+    A.Enabled = False
+    I.Enabled = False
+    DX.Enabled = False
+    SX.Enabled = False
+    Rilascia.Enabled = False
+    Cattura.Enabled = False
+    Ferma.Enabled = False
+Else
+    MsgBox "Non sei connesso", _
+    vbInformation, _
+    "Controllo COM"
+End If
+End Sub
+Private Sub AE_Click()
+If Ctrl = True Then
+    MSComm1.Output = "2"
+    A.Enabled = False
+    I.Enabled = False
+    DX.Enabled = False
+    SX.Enabled = False
+    Rilascia.Enabled = False
+    Cattura.Enabled = False
+    Ferma.Enabled = False
+Else
+    MsgBox "Non sei connesso", _
+    vbInformation, _
+    "Controllo COM"
+End If
+End Sub
+Private Sub Autoevita_Click()
+If Ctrl = True Then
+    MSComm1.Output = "1"
+    A.Enabled = False
+    I.Enabled = False
+    DX.Enabled = False
+    SX.Enabled = False
+    Rilascia.Enabled = False
+    Cattura.Enabled = False
+    Ferma.Enabled = False
+Else
+    MsgBox "Non sei connesso", _
+    vbInformation, _
+    "Controllo COM"
+End If
+End Sub
+Private Sub Connetti_Click()
+If Ctrl = True Then
+MsgBox "Porta COM gi‡ Collegata.", _
+vbInformation, _
+"Controllo COM"
+Else
+MSComm1.CommPort = 9
+MSComm1.PortOpen = True
+Ctrl = True
+MsgBox "Porta COM connessa.", _
+vbInformation, _
+"Controllo COM"
+End If
+End Sub
+Private Sub Disconnetti_Click()
+If Ctrl = False Then
+MsgBox "Porta COM gi‡ Disconnessa.", _
+vbInformation, _
+"Controllo COM"
+Else
+MSComm1.Output = "0"
+MSComm1.PortOpen = False
+Ctrl = False
+MsgBox "Porta COM Disconnessa.", _
+vbInformation, _
+"Controllo COM"
+End If
+End Sub
+Private Sub A_Click()
+    MSComm1.Output = "A"
+End Sub
+Private Sub I_Click()
+MSComm1.Output = "I"
+End Sub
+Private Sub DX_Click()
+MSComm1.Output = "D"
+End Sub
+Private Sub SX_Click()
+MSComm1.Output = "S"
+End Sub
+Private Sub Cattura_Click()
+MSComm1.Output = "Q"
+End Sub
+Private Sub Rilascia_Click()
+MSComm1.Output = "P"
+End Sub
+Private Sub Ferma_Click()
+MSComm1.Output = "F"
+End Sub
+Private Sub Manuale_KeyDown(KeyCode As Integer, Shift As Integer)
+If Ctrl = True Then
+    MSComm1.Output = "3"
+Else
+    MsgBox "Non sei connesso", _
+    vbInformation, _
+    "Controllo COM"
+End If
+If KeyCode = vbKeyW Then 'Avanti
+    MSComm1.Output = "A"
+ElseIf KeyCode = vbKeyS Then 'Indietro
+    MSComm1.Output = "I"
+ElseIf KeyCode = vbKeyA Then 'Sinistra
+    MSComm1.Output = "S"
+ElseIf KeyCode = vbKeyD Then 'Destra
+    MSComm1.Output = "D"
+ElseIf KeyCode = vbKeyF Then 'Stop
+    MSComm1.Output = "F"
+ElseIf KeyCode = vbKeyR Then 'Apri
+    MSComm1.Output = "P"
+ElseIf KeyCode = vbKeyT Then 'Chiudi
+    MSComm1.Output = "Q"
+End If
+End Sub
+Private Sub smEsci_Click(Index As Integer)
+If Ctrl = True Then
+    MsgBox "Disconnessione Porta COM.", _
+    vbInformation, _
+    "Controllo COM"
+    MSComm1.Output = "0"
+    MSComm1.PortOpen = False
+    Unload Me ' esci
+Else
+    Unload Me
+End If
+End Sub
